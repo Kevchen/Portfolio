@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Portfolio 1</key>
+	<dict>
+		<key>Stock</key>
+		<dict>
+			<key>Facebook</key>
+			<dict>
+				<key>Ticker</key>
+				<string>FB</string>
+				<key>Price</key>
+				<string>100.2</string>
+				<key>Date</key>
+				<date>2016-01-07T17:02:51Z</date>
+				<key>Number of Shares</key>
+				<string>40</string>
+			</dict>
+			<key>Google</key>
+			<dict>
+				<key>Ticker</key>
+				<string>FB</string>
+				<key>Price</key>
+				<string>100.2</string>
+				<key>Date</key>
+				<date>2016-01-07T17:02:51Z</date>
+				<key>Number of Shares</key>
+				<string>40</string>
+			</dict>
+			<key>Apple</key>
+			<dict>
+				<key>Ticker</key>
+				<string>FB</string>
+				<key>Price</key>
+				<string>100.2</string>
+				<key>Date</key>
+				<date>2016-01-07T17:02:51Z</date>
+				<key>Number of Shares</key>
+				<string>40</string>
+			</dict>
+		</dict>
+		<key>Bond</key>
+		<dict/>
+		<key>Fund</key>
+		<dict/>
+	</dict>
+</dict>
+</plist>
