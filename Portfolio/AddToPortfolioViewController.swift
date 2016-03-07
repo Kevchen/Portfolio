@@ -29,6 +29,12 @@ class AddToPortfolioViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //query latest price if they clicked the "+" button and bypass detailVeiw
+        if(priceToPass == nil){
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: "stockUpdated:", name: kNotificationStockUpdated, object: nil)
+            self.updateStocks()
+        }
+        
         //remove done button on top right tool bar
         self.navigationItem.setRightBarButtonItem(nil, animated: true)
         
@@ -47,6 +53,31 @@ class AddToPortfolioViewController: UIViewController, UITextFieldDelegate {
         //set keyboard types for textfields
         //priceTextField.keyboardType = UIKeyboardType.DecimalPad
         //numShareTextField.keyboardType = UIKeyboardType.NumberPad
+    }
+    
+    func updateStocks() {
+        let stockManager:StockManagerSingleton = StockManagerSingleton.sharedInstance
+        stockManager.updateSymbol(symbolToPass, exchangeToSearch: exchangeToPass)
+        
+        //Repeat this method after 15 secs. (For simplicity of the tutorial we are not cancelling it never)
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(900 * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(),
+            {
+                self.updateStocks()
+            }
+        )
+    }
+    
+    func stockUpdated(notification: NSNotification){
+        let quote: NSDictionary = notification.userInfo![kNotificationStockUpdated] as! NSDictionary
+        print(quote)
+        
+        //set the price
+        priceTextField.text = quote.objectForKey("LastTradePriceOnly") as? String
     }
 
     @IBAction func showDatePicker(sender: UITextField) {
