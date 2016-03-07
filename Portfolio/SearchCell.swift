@@ -14,6 +14,7 @@ class SearchCell: UITableViewCell {
     @IBOutlet weak var exchangeLabel: UILabel!
     @IBOutlet weak var symbolLabel: UILabel!
     @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var priceLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

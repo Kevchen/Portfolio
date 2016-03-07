@@ -13,6 +13,7 @@ class DetailViewController: UIViewController  {
     var nameToPass:String!
     var symbolToPass:String!
     var exchangeToPass:String!
+    var priceToPass:String!
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var symbolLabel: UILabel!
@@ -31,6 +32,12 @@ class DetailViewController: UIViewController  {
 
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "stockUpdated:", name: kNotificationStockUpdated, object: nil)
+        self.updateStocks()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
         self.updateStocks()
     }
     
@@ -67,6 +74,7 @@ class DetailViewController: UIViewController  {
             destController.nameToPass = nameToPass
             destController.symbolToPass = symbolToPass
             destController.exchangeToPass = exchangeToPass
+            destController.priceToPass = priceLabel.text
         }
     
     }
