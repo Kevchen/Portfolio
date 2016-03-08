@@ -21,7 +21,11 @@
 		6534F78E1C3E1EB90006622F /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6534F7881C3E1E0D0006622F /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6534F7931C3ED0CA0006622F /* PortfolioData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6534F7921C3ED0CA0006622F /* PortfolioData.plist */; };
 		6534F7951C3ED3620006622F /* AddToPortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6534F7941C3ED3620006622F /* AddToPortfolioViewController.swift */; };
+		656DA6A41C800C4B009D5E96 /* Stock+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656DA6A21C800C4B009D5E96 /* Stock+CoreDataProperties.swift */; };
+		656DA6A51C800C4B009D5E96 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656DA6A31C800C4B009D5E96 /* Stock.swift */; };
+		656DA6A91C891AF7009D5E96 /* PortfolioDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656DA6A81C891AF7009D5E96 /* PortfolioDetailViewController.swift */; };
 		657ACBDB1C406FCA00576904 /* StockManagerSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657ACBDA1C406FCA00576904 /* StockManagerSingleton.swift */; };
+		658451EE1C7E47AF00F1396C /* Portfolio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 658451EC1C7E47AF00F1396C /* Portfolio.xcdatamodeld */; };
 		65ACF4B71C3F1C5A00AD66E3 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACF4B61C3F1C5A00AD66E3 /* SearchCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,7 +108,11 @@
 		6534F7811C3E1E0D0006622F /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6534F7921C3ED0CA0006622F /* PortfolioData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PortfolioData.plist; sourceTree = "<group>"; };
 		6534F7941C3ED3620006622F /* AddToPortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToPortfolioViewController.swift; sourceTree = "<group>"; };
+		656DA6A21C800C4B009D5E96 /* Stock+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stock+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		656DA6A31C800C4B009D5E96 /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		656DA6A81C891AF7009D5E96 /* PortfolioDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioDetailViewController.swift; sourceTree = "<group>"; };
 		657ACBDA1C406FCA00576904 /* StockManagerSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockManagerSingleton.swift; sourceTree = "<group>"; };
+		658451ED1C7E47AF00F1396C /* Portfolio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Portfolio.xcdatamodel; sourceTree = "<group>"; };
 		65ACF4B61C3F1C5A00AD66E3 /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +145,8 @@
 		6534F7311C3C8CDF0006622F = {
 			isa = PBXGroup;
 			children = (
+				656DA6A21C800C4B009D5E96 /* Stock+CoreDataProperties.swift */,
+				656DA6A31C800C4B009D5E96 /* Stock.swift */,
 				6534F73C1C3C8CE00006622F /* Portfolio */,
 				6534F7811C3E1E0D0006622F /* Charts.xcodeproj */,
 				6534F7511C3C8CE00006622F /* PortfolioTests */,
@@ -160,6 +170,7 @@
 			children = (
 				6534F73D1C3C8CE00006622F /* AppDelegate.swift */,
 				6534F7731C3DCF1E0006622F /* PortfolioViewController.swift */,
+				656DA6A81C891AF7009D5E96 /* PortfolioDetailViewController.swift */,
 				6534F76F1C3C8F4B0006622F /* SearchTableViewController.swift */,
 				6534F7711C3DC9B70006622F /* DetailViewController.swift */,
 				6534F7941C3ED3620006622F /* AddToPortfolioViewController.swift */,
@@ -170,6 +181,7 @@
 				6534F7441C3C8CE00006622F /* Assets.xcassets */,
 				6534F7461C3C8CE00006622F /* LaunchScreen.storyboard */,
 				6534F7491C3C8CE00006622F /* Info.plist */,
+				658451EC1C7E47AF00F1396C /* Portfolio.xcdatamodeld */,
 				6534F7921C3ED0CA0006622F /* PortfolioData.plist */,
 			);
 			path = Portfolio;
@@ -369,10 +381,14 @@
 			files = (
 				657ACBDB1C406FCA00576904 /* StockManagerSingleton.swift in Sources */,
 				6534F76E1C3C8E8B0006622F /* InvestmentItem.swift in Sources */,
+				656DA6A51C800C4B009D5E96 /* Stock.swift in Sources */,
 				6534F7741C3DCF1E0006622F /* PortfolioViewController.swift in Sources */,
+				656DA6A91C891AF7009D5E96 /* PortfolioDetailViewController.swift in Sources */,
 				6534F7701C3C8F4B0006622F /* SearchTableViewController.swift in Sources */,
 				65ACF4B71C3F1C5A00AD66E3 /* SearchCell.swift in Sources */,
+				656DA6A41C800C4B009D5E96 /* Stock+CoreDataProperties.swift in Sources */,
 				6534F73E1C3C8CE00006622F /* AppDelegate.swift in Sources */,
+				658451EE1C7E47AF00F1396C /* Portfolio.xcdatamodeld in Sources */,
 				6534F7951C3ED3620006622F /* AddToPortfolioViewController.swift in Sources */,
 				6534F7721C3DC9B70006622F /* DetailViewController.swift in Sources */,
 			);
@@ -629,6 +645,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		658451EC1C7E47AF00F1396C /* Portfolio.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				658451ED1C7E47AF00F1396C /* Portfolio.xcdatamodel */,
+			);
+			currentVersion = 658451ED1C7E47AF00F1396C /* Portfolio.xcdatamodel */;
+			path = Portfolio.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6534F7321C3C8CDF0006622F /* Project object */;
 }

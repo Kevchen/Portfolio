@@ -57,13 +57,6 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         self.searchArray += [StockItem(name: "Celestica", symbol:  "CLS", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
         self.searchArray += [StockItem(name: "Royal Bank Of Canada", symbol:  "RY", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
         self.searchArray += [StockItem(name: "Air Canada", symbol:  "AC", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "6", symbol:  "INTC", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "7", symbol:  "INTC", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "8", symbol:  "INTC", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "9", symbol:  "INTC", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "10", symbol:  "INTC", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "11", symbol:  "INTC", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        
         
         self.tableView.reloadData()
     }
