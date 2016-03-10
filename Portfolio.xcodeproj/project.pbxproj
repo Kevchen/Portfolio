@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A54983B1C91F90900FDDED3 /* NASDAQ.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A54983A1C91F90900FDDED3 /* NASDAQ.json */; };
+		0AFD8DDA1C896E9900BEE081 /* TSX.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AFD8DD91C896E9900BEE081 /* TSX.json */; };
 		6534F73E1C3C8CE00006622F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6534F73D1C3C8CE00006622F /* AppDelegate.swift */; };
 		6534F7431C3C8CE00006622F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6534F7411C3C8CE00006622F /* Main.storyboard */; };
 		6534F7451C3C8CE00006622F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6534F7441C3C8CE00006622F /* Assets.xcassets */; };
@@ -89,6 +91,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A54983A1C91F90900FDDED3 /* NASDAQ.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = NASDAQ.json; path = ../NASDAQ.json; sourceTree = "<group>"; };
+		0AFD8DD91C896E9900BEE081 /* TSX.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TSX.json; sourceTree = SOURCE_ROOT; };
 		6534F73A1C3C8CE00006622F /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6534F73D1C3C8CE00006622F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6534F7421C3C8CE00006622F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 		6534F73C1C3C8CE00006622F /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				0A54983A1C91F90900FDDED3 /* NASDAQ.json */,
+				0AFD8DD91C896E9900BEE081 /* TSX.json */,
 				6534F73D1C3C8CE00006622F /* AppDelegate.swift */,
 				6534F7731C3DCF1E0006622F /* PortfolioViewController.swift */,
 				656DA6A81C891AF7009D5E96 /* PortfolioDetailViewController.swift */,
@@ -354,7 +360,9 @@
 				6534F7481C3C8CE00006622F /* LaunchScreen.storyboard in Resources */,
 				6534F7931C3ED0CA0006622F /* PortfolioData.plist in Resources */,
 				6534F7451C3C8CE00006622F /* Assets.xcassets in Resources */,
+				0A54983B1C91F90900FDDED3 /* NASDAQ.json in Resources */,
 				6534F7431C3C8CE00006622F /* Main.storyboard in Resources */,
+				0AFD8DDA1C896E9900BEE081 /* TSX.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

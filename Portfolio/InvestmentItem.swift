@@ -13,6 +13,7 @@ struct StockItem
     let name:String
     let symbol:String
     let exchange:String
+    let sector:String
     let numShare:Int
     let purchaseDate: NSDate
     let price: double_t

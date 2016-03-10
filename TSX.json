@@ -1,0 +1,1205 @@
+{
+    "stocks":[
+  {
+    "Stock Name":"Pure Industrial Real Estate Trust",
+    "Ticker":"AAR.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Advantage Oil & Gas Ltd.",
+    "Ticker":"AAV",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Barrick Gold Corporation",
+    "Ticker":"ABX",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Air Canada Voting and Variable Voting Shares",
+    "Ticker":"AC",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"ATCO Ltd. Class I Non-voting Shares",
+    "Ticker":"ACO.X",
+    "Sector":"Utilities"
+  },
+  {
+    "Stock Name":"AutoCanada Inc.",
+    "Ticker":"ACQ",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Alaris Royalty Corp.",
+    "Ticker":"AD",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Agnico Eagle Mines Limited",
+    "Ticker":"AEM",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Alamos Gold Inc.",
+    "Ticker":"AGI",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Agrium Inc.",
+    "Ticker":"AGU",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Aimia Inc.",
+    "Ticker":"AIM",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"AltaGas Ltd.",
+    "Ticker":"ALA",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Allied Properties Real Estate Investment Trust",
+    "Ticker":"AP.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Algonquin Power & Utilities Corp.",
+    "Ticker":"AQN",
+    "Sector":"Utilities"
+  },
+  {
+    "Stock Name":"Aecon Group Inc.",
+    "Ticker":"ARE",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"ARC Resources Ltd.",
+    "Ticker":"ARX",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Alacer Gold Corp.",
+    "Ticker":"ASR",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"ATS Automation Tooling Systems Inc.",
+    "Ticker":"ATA",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Alimentation Couche-Tard Inc. Class B Subordinate Voting Shares",
+    "Ticker":"ATD.B",
+    "Sector":"Consumer Staples"
+  },
+  {
+    "Stock Name":"Athabasca Oil Corporation",
+    "Ticker":"ATH",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Avigilon Corporation",
+    "Ticker":"AVO",
+    "Sector":"Information Technology"
+  },
+  {
+    "Stock Name":"Artis Real Estate Investment Trust",
+    "Ticker":"AX.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Amaya Inc.",
+    "Ticker":"AYA",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Badger Daylighting Ltd.",
+    "Ticker":"BAD",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Brookfield Asset Management Inc. Class A Limited Voting Shares",
+    "Ticker":"BAM.A",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"BlackBerry Limited",
+    "Ticker":"BB",
+    "Sector":"Information Technology"
+  },
+  {
+    "Stock Name":"Bombardier Inc. Class B Subordinate Voting Shares",
+    "Ticker":"BBD.B",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Cott Corporation",
+    "Ticker":"BCB",
+    "Sector":"Consumer Staples"
+  },
+  {
+    "Stock Name":"BCE Inc.",
+    "Ticker":"BCE",
+    "Sector":"Telecommunications"
+  },
+  {
+    "Stock Name":"Boardwalk Real Estate Investment Trust",
+    "Ticker":"BEI.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Brookfield Renewable Energy Partners L.P.",
+    "Ticker":"BEP.UN",
+    "Sector":"Utilities"
+  },
+  {
+    "Stock Name":"Progressive Waste Solutions Ltd.",
+    "Ticker":"BIN",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Birchcliff Energy Ltd.",
+    "Ticker":"BIR",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Bank of Montreal",
+    "Ticker":"BMO",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Bonterra Energy Corp.",
+    "Ticker":"BNE",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Bonavista Energy Corporation",
+    "Ticker":"BNP",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Bank of Nova Scotia (The)",
+    "Ticker":"BNS",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Brookfield Property Partners L.P.",
+    "Ticker":"BPY.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Baytex Energy Corp.",
+    "Ticker":"BTE",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"B2Gold Corp.",
+    "Ticker":"BTO",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Boyd Group Income Fund",
+    "Ticker":"BYD.UN",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"CAE Inc.",
+    "Ticker":"CAE",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Canadian Apartment Properties Real Estate Investment Trust",
+    "Ticker":"CAR.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Cogeco Cable Inc. Subordinate Voting Shares",
+    "Ticker":"CCA",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"CCL Industries Inc.",
+    "Ticker":"CCL.B",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Cameco Corporation",
+    "Ticker":"CCO",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Canadian Energy Services & Technology Corp.",
+    "Ticker":"CEU",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Canaccord Genuity Group Inc.",
+    "Ticker":"CF",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Canfor Corporation",
+    "Ticker":"CFP",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Centerra Gold Inc.",
+    "Ticker":"CG",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Cineplex Inc.",
+    "Ticker":"CGX",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Chemtrade Logistics Income Fund",
+    "Ticker":"CHE.UN",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Colliers International Group Inc. Subordinate Voting Shares",
+    "Ticker":"CIG",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"CI Financial Corp.",
+    "Ticker":"CIX",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Corus Entertainment Inc. Class B Non-Voting Shares",
+    "Ticker":"CJR.B",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Celestica Inc. Subordinate Voting Shares",
+    "Ticker":"CLS",
+    "Sector":"Information Technology"
+  },
+  {
+    "Stock Name":"Canadian Imperial Bank Of Commerce",
+    "Ticker":"CM",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Computer Modelling Group Ltd.",
+    "Ticker":"CMG",
+    "Sector":"Information Technology"
+  },
+  {
+    "Stock Name":"Canadian Natural Resources Limited",
+    "Ticker":"CNQ",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Canadian National Railway Company",
+    "Ticker":"CNR",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Canadian Oil Sands Limited",
+    "Ticker":"COS",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Canadian Pacific Railway Limited",
+    "Ticker":"CP",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Crescent Point Energy Corp.",
+    "Ticker":"CPG",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Capital Power Corporation",
+    "Ticker":"CPX",
+    "Sector":"Utilities"
+  },
+  {
+    "Stock Name":"Crew Energy Inc.",
+    "Ticker":"CR",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Crombie Real Estate Investment Trust",
+    "Ticker":"CRR.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Chartwell Retirement Residences",
+    "Ticker":"CSH.UN",
+    "Sector":"Health Care"
+  },
+  {
+    "Stock Name":"Constellation Software Inc.",
+    "Ticker":"CSU",
+    "Sector":"Information Technology"
+  },
+  {
+    "Stock Name":"Canadian Tire Corporation Limited Class A Non-Voting Shares",
+    "Ticker":"CTC.A",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Canadian Utilities Limited Class A Non-Voting Shares",
+    "Ticker":"CU",
+    "Sector":"Utilities"
+  },
+  {
+    "Stock Name":"Cominar Real Estate Investment Trust",
+    "Ticker":"CUF.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Cenovus Energy Inc.",
+    "Ticker":"CVE",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Canadian Western Bank",
+    "Ticker":"CWB",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Concordia Healthcare Corp.",
+    "Ticker":"CXR",
+    "Sector":"Health Care"
+  },
+  {
+    "Stock Name":"Dream Office Real Estate Investment Trust",
+    "Ticker":"D.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Dominion Diamond Corporation",
+    "Ticker":"DDC",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Detour Gold Corporation",
+    "Ticker":"DGC",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"DH Corporation",
+    "Ticker":"DH",
+    "Sector":"Information Technology"
+  },
+  {
+    "Stock Name":"DHX Media Ltd.",
+    "Ticker":"DHX.B",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Dorel Industries Inc. Class B Subordinate Voting Shares",
+    "Ticker":"DII.B",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Dollarama Inc.",
+    "Ticker":"DOL",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"BRP Inc. Subordinate Voting Shares",
+    "Ticker":"DOO",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Dream Global Real Estate Investment Trust",
+    "Ticker":"DRG.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Descartes Systems Group Inc. (The)",
+    "Ticker":"DSG",
+    "Sector":"Information Technology"
+  },
+  {
+    "Stock Name":"Encana Corporation",
+    "Ticker":"ECA",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"EnerCare Inc.",
+    "Ticker":"ECI",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Element Financial Corporation",
+    "Ticker":"EFN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Enerflex Ltd.",
+    "Ticker":"EFX",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Eldorado Gold Corporation",
+    "Ticker":"ELD",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Emera Incorporated",
+    "Ticker":"EMA",
+    "Sector":"Utilities"
+  },
+  {
+    "Stock Name":"Empire Company Limited Non-Voting Class A Shares",
+    "Ticker":"EMP.A",
+    "Sector":"Consumer Staples"
+  },
+  {
+    "Stock Name":"Enbridge Inc.",
+    "Ticker":"ENB",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Enbridge Income Fund Holdings Inc.",
+    "Ticker":"ENF",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Enerplus Corporation",
+    "Ticker":"ERF",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Ensign Energy Services Inc.",
+    "Ticker":"ESI",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Enghouse Systems Limited",
+    "Ticker":"ESL",
+    "Sector":"Information Technology"
+  },
+  {
+    "Stock Name":"Extendicare Inc.",
+    "Ticker":"EXE",
+    "Sector":"Health Care"
+  },
+  {
+    "Stock Name":"First Capital Realty Inc.",
+    "Ticker":"FCR",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Fairfax Financial Holdings Limited Subordinate Voting Shares",
+    "Ticker":"FFH",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"First Quantum Minerals Ltd.",
+    "Ticker":"FM",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Franco-Nevada Corporation",
+    "Ticker":"FNV",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"First Majestic Silver Corp.",
+    "Ticker":"FR",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Freehold Royalties Ltd.",
+    "Ticker":"FRU",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"FirstService Corporation Subordinate Voting Shares",
+    "Ticker":"FSV",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Fortis Inc.",
+    "Ticker":"FTS",
+    "Sector":"Utilities"
+  },
+  {
+    "Stock Name":"Finning International Inc.",
+    "Ticker":"FTT",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Goldcorp Inc.",
+    "Ticker":"G",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Great Canadian Gaming Corporation",
+    "Ticker":"GC",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Gibson Energy Inc.",
+    "Ticker":"GEI",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"CGI Group Inc. Class A Subordinate  Voting Shares",
+    "Ticker":"GIB.A",
+    "Sector":"Information Technology"
+  },
+  {
+    "Stock Name":"Gildan Activewear Inc.",
+    "Ticker":"GIL",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Granite Real Estate Investment Trust",
+    "Ticker":"GRT.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Gran Tierra Energy Inc.",
+    "Ticker":"GTE",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Great-West Lifeco Inc.",
+    "Ticker":"GWO",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Hudson's Bay Company",
+    "Ticker":"HBC",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"HudBay Minerals Inc.",
+    "Ticker":"HBM",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Home Capital Group Inc.",
+    "Ticker":"HCG",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"H&R Real Estate Investment Trust",
+    "Ticker":"HR.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Husky Energy Inc.",
+    "Ticker":"HSE",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Industrial Alliance Insurance and Financial Services Inc.",
+    "Ticker":"IAG",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Intact Financial Corporation",
+    "Ticker":"IFC",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Interfor Corporation",
+    "Ticker":"IFP",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"IGM Financial Inc.",
+    "Ticker":"IGM",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"IAMGOLD Corporation",
+    "Ticker":"IMG",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Imperial Oil Limited",
+    "Ticker":"IMO",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Innergex Renewable Energy Inc.",
+    "Ticker":"INE",
+    "Sector":"Utilities"
+  },
+  {
+    "Stock Name":"Inter Pipeline Ltd.",
+    "Ticker":"IPL",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"The Intertain Group Limited",
+    "Ticker":"IT",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Intertape Polymer Group Inc.",
+    "Ticker":"ITP",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Just Energy Group Inc.",
+    "Ticker":"JE",
+    "Sector":"Utilities"
+  },
+  {
+    "Stock Name":"Kinross Gold Corporation",
+    "Ticker":"K",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Kelt Exploration Ltd.",
+    "Ticker":"KEL",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Keyera Corp.",
+    "Ticker":"KEY",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Kinaxis Inc.",
+    "Ticker":"KXS",
+    "Sector":"Information Technology"
+  },
+  {
+    "Stock Name":"Loblaw Companies Limited",
+    "Ticker":"L",
+    "Sector":"Consumer Staples"
+  },
+  {
+    "Stock Name":"Laurentian Bank of Canada",
+    "Ticker":"LB",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Labrador Iron Ore Royalty Corporation",
+    "Ticker":"LIF",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Linamar Corporation",
+    "Ticker":"LNR",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Lundin Mining Corporation",
+    "Ticker":"LUN",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Manitoba Telecom Services Inc.",
+    "Ticker":"MBT",
+    "Sector":"Telecommunications"
+  },
+  {
+    "Stock Name":"MacDonald Dettwiler and Associates Ltd",
+    "Ticker":"MDA",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"MEG Energy Corp.",
+    "Ticker":"MEG",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Manulife Financial Corporation",
+    "Ticker":"MFC",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Maple Leaf Foods Inc.",
+    "Ticker":"MFI",
+    "Sector":"Consumer Staples"
+  },
+  {
+    "Stock Name":"Magna International Inc.",
+    "Ticker":"MG",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Genworth MI Canada Inc.",
+    "Ticker":"MIC",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Mitel Networks Corporation",
+    "Ticker":"MNW",
+    "Sector":"Information Technology"
+  },
+  {
+    "Stock Name":"Martinrea International Inc.",
+    "Ticker":"MRE",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Metro Inc.",
+    "Ticker":"MRU",
+    "Sector":"Consumer Staples"
+  },
+  {
+    "Stock Name":"Mullen Group Ltd.",
+    "Ticker":"MTL",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Methanex Corporation",
+    "Ticker":"MX",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"National Bank of Canada",
+    "Ticker":"NA",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Norbord Inc.",
+    "Ticker":"NBD",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"New Flyer Industries Inc.",
+    "Ticker":"NFI",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"NovaGold Resources Inc.",
+    "Ticker":"NG",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"New Gold Inc.",
+    "Ticker":"NGD",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Northland Power Inc.",
+    "Ticker":"NPI",
+    "Sector":"Utilities"
+  },
+  {
+    "Stock Name":"Nevsun Resources Ltd.",
+    "Ticker":"NSU",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"NuVista Energy Ltd.",
+    "Ticker":"NVA",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Northview Apartment Real Estate Investment Trust",
+    "Ticker":"NVU.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"The North West Company Inc.",
+    "Ticker":"NWC",
+    "Sector":"Consumer Staples"
+  },
+  {
+    "Stock Name":"ONEX Corporation Subordinate Voting Shares",
+    "Ticker":"OCX",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"OceanaGold Corporation",
+    "Ticker":"OGC",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Osisko Gold Royalties Ltd",
+    "Ticker":"OR",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Open Text Corporation",
+    "Ticker":"OTC",
+    "Sector":"Information Technology"
+  },
+  {
+    "Stock Name":"Primero Mining Corp.",
+    "Ticker":"P",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Pan American Silver Corp.",
+    "Ticker":"PAA",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Precision Drilling Corporation",
+    "Ticker":"PD",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Peyto Exploration & Development Corp.",
+    "Ticker":"PEY",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Pengrowth Energy Corporation",
+    "Ticker":"PGF",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Jean Coutu Group (PJC) Inc. (The)",
+    "Ticker":"PJC.A",
+    "Sector":"Consumer Staples"
+  },
+  {
+    "Stock Name":"Parkland Fuel Corporation",
+    "Ticker":"PKI",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"ProMetic Life Sciences Inc.",
+    "Ticker":"PLI",
+    "Sector":"Health Care"
+  },
+  {
+    "Stock Name":"Potash Corporation of Saskatchewan Inc.",
+    "Ticker":"POT",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Paramount Resources Ltd. Class A Common Shares",
+    "Ticker":"POU",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Power Corporation of Canada Subordinate Voting Shares",
+    "Ticker":"POW",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Pembina Pipeline Corporation",
+    "Ticker":"PPL",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Performance Sports Group Ltd.",
+    "Ticker":"PSG",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Pason Systems Inc.",
+    "Ticker":"PSI",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"PrairieSky Royalty Ltd.",
+    "Ticker":"PSK",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Pretium Resources Inc.",
+    "Ticker":"PVG",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Power Financial Corporation",
+    "Ticker":"PWF",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Penn West Petroleum Ltd.",
+    "Ticker":"PWT",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Parex Resources Inc.",
+    "Ticker":"PXT",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Quebecor Inc. Class B Subordinate Voting Shares",
+    "Ticker":"QBR.B",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Restaurant Brands International Inc.",
+    "Ticker":"QSR",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Ritchie Bros. Auctioneers Incorporated",
+    "Ticker":"RBA",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Rogers Communications Inc. Class B Non-voting Shares",
+    "Ticker":"RCI.B",
+    "Sector":"Telecommunications"
+  },
+  {
+    "Stock Name":"Canadian Real Estate Investment Trust",
+    "Ticker":"REF.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"RioCan Real Estate Investment Trust",
+    "Ticker":"REI.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"RONA inc.",
+    "Ticker":"RON",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Raging River Exploration Inc.",
+    "Ticker":"RRX",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Russel Metals Inc.",
+    "Ticker":"RUS",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Royal Bank of Canada",
+    "Ticker":"RY",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Saputo Inc.",
+    "Ticker":"SAP",
+    "Sector":"Consumer Staples"
+  },
+  {
+    "Stock Name":"ShawCor Ltd.",
+    "Ticker":"SCL",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Secure Energy Services Inc.",
+    "Ticker":"SES",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Surge Energy Inc.",
+    "Ticker":"SGY",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Stella-Jones Inc.",
+    "Ticker":"SJ",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Shaw Communications Inc. Class B Non-voting Shares",
+    "Ticker":"SJR.B",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Sun Life Financial Inc.",
+    "Ticker":"SLF",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Silver Wheaton Corp.",
+    "Ticker":"SLW",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Semafo Inc.",
+    "Ticker":"SMF",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"SNC-Lavalin Group Inc.",
+    "Ticker":"SNC",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Superior Plus Corp.",
+    "Ticker":"SPB",
+    "Sector":"Utilities"
+  },
+  {
+    "Stock Name":"Smart Real Estate Investment Trust",
+    "Ticker":"SRU.UN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Silver Standard Resources Inc.",
+    "Ticker":"SSO",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Stantec Inc.",
+    "Ticker":"STN",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Suncor Energy Inc.",
+    "Ticker":"SU",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Sierra Wireless Inc",
+    "Ticker":"SW",
+    "Sector":"Information Technology"
+  },
+  {
+    "Stock Name":"TELUS Corporation",
+    "Ticker":"T",
+    "Sector":"Utilities"
+  },
+  {
+    "Stock Name":"TransAlta Corporation",
+    "Ticker":"TA",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Teck Resources Limited Class B Subordinate Voting Shares",
+    "Ticker":"TCK.B",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Transcontinental Inc. Class A Subordinate Voting Shares",
+    "Ticker":"TCL.A",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Tricon Capital Group Inc.",
+    "Ticker":"TCN",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Toronto-Dominion Bank (The)",
+    "Ticker":"TD",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Trinidad Drilling Ltd.",
+    "Ticker":"TDG",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"TransForce Inc.",
+    "Ticker":"TFI",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Tahoe Resources Inc.",
+    "Ticker":"THO",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Toromont Industries Ltd.",
+    "Ticker":"TIH",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"TORC Oil & Gas Ltd.",
+    "Ticker":"TOG",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Tourmaline Oil Corp.",
+    "Ticker":"TOU",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Thomson Reuters Corporation",
+    "Ticker":"TRI",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"TransCanada Corporation",
+    "Ticker":"TRP",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Turquoise Hill Resources Ltd.",
+    "Ticker":"TRQ",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"Torex Gold Resources Inc.",
+    "Ticker":"TXG",
+    "Sector":"Consumer Discretionary"
+  },
+  {
+    "Stock Name":"Uni-Select Inc.",
+    "Ticker":"UNS",
+    "Sector":"Cash and/or Derivatives"
+  },
+  {
+    "Stock Name":"Vermilion Energy Inc.",
+    "Ticker":"VET",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Seven Generations Energy Ltd. class A common shares",
+    "Ticker":"VII",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Valeant Pharmaceuticals International Inc",
+    "Ticker":"VRX",
+    "Sector":"Health Care"
+  },
+  {
+    "Stock Name":"Veresen Inc.",
+    "Ticker":"VSN",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Whitecap Resources Inc.",
+    "Ticker":"WCP",
+    "Sector":"Energy"
+  },
+  {
+    "Stock Name":"Western Forest Products Inc.",
+    "Ticker":"WEF",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"West Fraser Timber Co. Ltd.",
+    "Ticker":"WFT",
+    "Sector":"Materials"
+  },
+  {
+    "Stock Name":"WestJet Airlines Ltd.",
+    "Ticker":"WJA",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"George Weston Limited",
+    "Ticker":"WN",
+    "Sector":"Consumer Staples"
+  },
+  {
+    "Stock Name":"WSP Global Inc.",
+    "Ticker":"WSP",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"Westshore Terminals Investment Corporation",
+    "Ticker":"WTE",
+    "Sector":"Industrials"
+  },
+  {
+    "Stock Name":"TMX Group Limited",
+    "Ticker":"X",
+    "Sector":"Financials"
+  },
+  {
+    "Stock Name":"Yamana Gold Inc.",
+    "Ticker":"YRI",
+    "Sector":"Materials"
+  }
+    ]
+}
+

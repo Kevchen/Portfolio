@@ -28,12 +28,11 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         
         let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
         let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
-        
         setChart(months, values: unitsSold)
-        
+
         //dont display back button on main view
         self.navigationItem.setHidesBackButton(true, animated: false)
-        
+
         do {
             try self.fetchedResultsController.performFetch()
         } catch {

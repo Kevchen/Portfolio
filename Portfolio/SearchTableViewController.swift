@@ -37,9 +37,12 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         self.tableView.tableHeaderView = self.resultSearchController.searchBar
         self.resultSearchController.searchBar.setValue("X", forKey: "_cancelButtonText")
         
+        insertJSONToSearchArray("TSX", exchange: "TSE")
+        insertJSONToSearchArray("NASDAQ", exchange: "NASDAQ")
+        
         //hide search bar when push to detail view
         self.definesPresentationContext = true
-        
+        /*
         //added items
         self.searchArray += [StockItem(name: "TD Canada Trust", symbol:  "TD", exchange: "NYSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
         self.searchArray += [StockItem(name: "Apple Inc", symbol: "AAPL", exchange: "NYSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
@@ -57,7 +60,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         self.searchArray += [StockItem(name: "Celestica", symbol:  "CLS", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
         self.searchArray += [StockItem(name: "Royal Bank Of Canada", symbol:  "RY", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
         self.searchArray += [StockItem(name: "Air Canada", symbol:  "AC", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        
+        */
         self.tableView.reloadData()
     }
     
@@ -136,11 +139,34 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
     
         let searchText:String = searchController.searchBar.text!.lowercaseString
         filterArray = self.searchArray.filter(){
-            ($0.name.lowercaseString).containsString(searchText) ||
             ($0.symbol.lowercaseString).containsString(searchText)
         }
         
         self.tableView.reloadData()
+    }
+    
+    func insertJSONToSearchArray(file: String, exchange: String){
+        //parsing in the json file
+        
+        guard let path = NSBundle.mainBundle().pathForResource(file, ofType: "json") else {
+            print("Error finding file")
+            return
+        }
+        
+        let jsonData = NSData(contentsOfFile: path)
+        do {
+            let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+            guard let stocks = jsonResult["stocks"] as? [[String: AnyObject]] else {return}
+            for stock in stocks {
+                guard let ticker = stock["Ticker"] as? String,
+                    let name = stock["Stock Name"] as? String,
+                    let sector = stock["Sector"] as? String
+                    else {return}
+                self.searchArray += [StockItem(name: name, symbol:  ticker, exchange: exchange, sector: sector, numShare: 0, purchaseDate: NSDate(), price: 0)]
+                
+            }
+            
+        } catch {print("Error")}
     }
     
     //for passing name, symbol to next view
