@@ -139,6 +139,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
     
         let searchText:String = searchController.searchBar.text!.lowercaseString
         filterArray = self.searchArray.filter(){
+            ($0.name.lowercaseString).hasPrefix(searchText) ||
             ($0.symbol.lowercaseString).containsString(searchText)
         }
         
