@@ -96,7 +96,6 @@ class DetailViewController: UIViewController  {
         }
         let changeInPercent: String = quote.objectForKey("ChangeinPercent") as! String
         risefallLabel.text = change+" ("+String(changeInPercent.characters.dropFirst())+")"
-
     }
 
 }

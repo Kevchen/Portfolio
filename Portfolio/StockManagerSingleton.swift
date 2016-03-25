@@ -9,6 +9,7 @@
 import Foundation
 
 let kNotificationStockUpdated = "stockUpdatedNotification"
+let kNotificationCurrencyUpdated = "currencyUpdatedNotification"
 
 class StockManagerSingleton {
     
@@ -33,11 +34,11 @@ class StockManagerSingleton {
     func updateSymbol(symbolToSearch: String, exchangeToSearch: String) {
         
         //1: YAHOO Finance API: Request for a list of symbols example:
-        //http://query.yahooapis.com/v1/public/yql?q=select * from yahoo.finance.quotes where symbol IN ("AAPL","GOOG","FB")&format=json&env=http://datatables.org/alltables.env
+        //https://query.yahooapis.com/v1/public/yql?q=select * from yahoo.finance.quotes where symbol IN ("AAPL","GOOG","FB")&format=json&env=http://datatables.org/alltables.env
         
         //2: Build the URL as above with our array of symbols
         let stringQuotes: String
-        if(exchangeToSearch == "TSE"){  //Toronto Stock Exchange
+        if(exchangeToSearch == "TSX"){  //Toronto Stock Exchange
             stringQuotes = "(\""+symbolToSearch+".TO\")";
         }
         else{ //NYSE
@@ -62,7 +63,7 @@ class StockManagerSingleton {
             //4: JSON process
             do {
                 let jsonData: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
-                print(jsonData)
+                //print(jsonData)
                 
                 //5: Extract the Quotes and Values and send them inside a NSNotification
                 let quote: NSDictionary = ((jsonData.objectForKey("query") as! NSDictionary).objectForKey("results") as! NSDictionary).objectForKey("quote") as! NSDictionary
@@ -78,4 +79,48 @@ class StockManagerSingleton {
         //6: DONT FORGET to LAUNCH the NSURLSessionDataTask!!!!!!
         task.resume()
     }
+    
+    func updateCurrency(currencyFrom: String, currencyTo: String) {
+        //1: YAHOO Finance API: Request for a list of symbols example:
+        //http://query.yahooapis.com/v1/public/yql?q=select * from yahoo.finance.xchange where pair IN ("USDCAD")&formate=json&env=store://datatables.org/alltableswithkeys
+        
+        //2: Build the URL as above with our array of symbols
+        let stringQuotes: String = "(\""+currencyFrom + currencyTo+"\")"
+        
+        
+        let urlString:String = ("https://query.yahooapis.com/v1/public/yql?q=select * from yahoo.finance.xchange where pair IN "+stringQuotes+"&format=json&env=http://datatables.org/alltables.env").stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
+        let url = NSURL(string: urlString)
+        let request: NSURLRequest = NSURLRequest(URL:url!)
+        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let session = NSURLSession(configuration: config)
+        
+        //3: Completion block/Clousure for the NSURLSessionDataTask
+        let task : NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: {(data, response, error) in
+            //error when requesting data
+            guard error == nil else{
+                print(error!.localizedDescription)
+                return
+            }
+            
+            //4: JSON process
+            do {
+                let jsonData: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+                                
+                //5: Extract the Quotes and Values and send them inside a NSNotification
+                let quote: NSDictionary = ((jsonData.objectForKey("query") as! NSDictionary).objectForKey("results") as! NSDictionary).objectForKey("rate") as! NSDictionary
+                dispatch_async(dispatch_get_main_queue(), {
+                    NSNotificationCenter.defaultCenter().postNotificationName(kNotificationCurrencyUpdated, object: nil, userInfo:[kNotificationCurrencyUpdated:quote])
+                })
+                
+            } catch{
+                print("Error converting data to JSON")
+            }
+            
+        })
+        //6: DONT FORGET to LAUNCH the NSURLSessionDataTask!!!!!!
+        task.resume()
+    }
+    
+    
+    
 }

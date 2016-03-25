@@ -2,7 +2,7 @@
     "stocks":[
   {
     "Stock Name":"Pure Industrial Real Estate Trust",
-    "Ticker":"AAR.UN",
+    "Ticker":"AAR-UN",
     "Sector":"Financials"
   },
   {
@@ -22,7 +22,7 @@
   },
   {
     "Stock Name":"ATCO Ltd. Class I Non-voting Shares",
-    "Ticker":"ACO.X",
+    "Ticker":"ACO-X",
     "Sector":"Utilities"
   },
   {
@@ -62,7 +62,7 @@
   },
   {
     "Stock Name":"Allied Properties Real Estate Investment Trust",
-    "Ticker":"AP.UN",
+    "Ticker":"AP-UN",
     "Sector":"Financials"
   },
   {
@@ -92,7 +92,7 @@
   },
   {
     "Stock Name":"Alimentation Couche-Tard Inc. Class B Subordinate Voting Shares",
-    "Ticker":"ATD.B",
+    "Ticker":"ATD-B",
     "Sector":"Consumer Staples"
   },
   {
@@ -107,7 +107,7 @@
   },
   {
     "Stock Name":"Artis Real Estate Investment Trust",
-    "Ticker":"AX.UN",
+    "Ticker":"AX-UN",
     "Sector":"Financials"
   },
   {
@@ -122,7 +122,7 @@
   },
   {
     "Stock Name":"Brookfield Asset Management Inc. Class A Limited Voting Shares",
-    "Ticker":"BAM.A",
+    "Ticker":"BAM-A",
     "Sector":"Financials"
   },
   {
@@ -132,7 +132,7 @@
   },
   {
     "Stock Name":"Bombardier Inc. Class B Subordinate Voting Shares",
-    "Ticker":"BBD.B",
+    "Ticker":"BBD-B",
     "Sector":"Industrials"
   },
   {
@@ -147,12 +147,12 @@
   },
   {
     "Stock Name":"Boardwalk Real Estate Investment Trust",
-    "Ticker":"BEI.UN",
+    "Ticker":"BEI-UN",
     "Sector":"Financials"
   },
   {
     "Stock Name":"Brookfield Renewable Energy Partners L.P.",
-    "Ticker":"BEP.UN",
+    "Ticker":"BEP-UN",
     "Sector":"Utilities"
   },
   {
@@ -187,7 +187,7 @@
   },
   {
     "Stock Name":"Brookfield Property Partners L.P.",
-    "Ticker":"BPY.UN",
+    "Ticker":"BPY-UN",
     "Sector":"Financials"
   },
   {
@@ -202,7 +202,7 @@
   },
   {
     "Stock Name":"Boyd Group Income Fund",
-    "Ticker":"BYD.UN",
+    "Ticker":"BYD-UN",
     "Sector":"Industrials"
   },
   {
@@ -212,7 +212,7 @@
   },
   {
     "Stock Name":"Canadian Apartment Properties Real Estate Investment Trust",
-    "Ticker":"CAR.UN",
+    "Ticker":"CAR-UN",
     "Sector":"Financials"
   },
   {
@@ -222,7 +222,7 @@
   },
   {
     "Stock Name":"CCL Industries Inc.",
-    "Ticker":"CCL.B",
+    "Ticker":"CCL-B",
     "Sector":"Materials"
   },
   {
@@ -257,7 +257,7 @@
   },
   {
     "Stock Name":"Chemtrade Logistics Income Fund",
-    "Ticker":"CHE.UN",
+    "Ticker":"CHE-UN",
     "Sector":"Materials"
   },
   {
@@ -272,7 +272,7 @@
   },
   {
     "Stock Name":"Corus Entertainment Inc. Class B Non-Voting Shares",
-    "Ticker":"CJR.B",
+    "Ticker":"CJR-B",
     "Sector":"Consumer Discretionary"
   },
   {
@@ -327,12 +327,12 @@
   },
   {
     "Stock Name":"Crombie Real Estate Investment Trust",
-    "Ticker":"CRR.UN",
+    "Ticker":"CRR-UN",
     "Sector":"Financials"
   },
   {
     "Stock Name":"Chartwell Retirement Residences",
-    "Ticker":"CSH.UN",
+    "Ticker":"CSH-UN",
     "Sector":"Health Care"
   },
   {
@@ -342,7 +342,7 @@
   },
   {
     "Stock Name":"Canadian Tire Corporation Limited Class A Non-Voting Shares",
-    "Ticker":"CTC.A",
+    "Ticker":"CTC-A",
     "Sector":"Consumer Discretionary"
   },
   {
@@ -352,7 +352,7 @@
   },
   {
     "Stock Name":"Cominar Real Estate Investment Trust",
-    "Ticker":"CUF.UN",
+    "Ticker":"CUF-UN",
     "Sector":"Financials"
   },
   {
@@ -372,7 +372,7 @@
   },
   {
     "Stock Name":"Dream Office Real Estate Investment Trust",
-    "Ticker":"D.UN",
+    "Ticker":"D-UN",
     "Sector":"Financials"
   },
   {
@@ -392,12 +392,12 @@
   },
   {
     "Stock Name":"DHX Media Ltd.",
-    "Ticker":"DHX.B",
+    "Ticker":"DHX-B",
     "Sector":"Consumer Discretionary"
   },
   {
-    "Stock Name":"Dorel Industries Inc. Class B Subordinate Voting Shares",
-    "Ticker":"DII.B",
+    "Stock Name":"Dorel Industries Inc- Class B Subordinate Voting Shares",
+    "Ticker":"DII-B",
     "Sector":"Consumer Discretionary"
   },
   {
@@ -412,7 +412,7 @@
   },
   {
     "Stock Name":"Dream Global Real Estate Investment Trust",
-    "Ticker":"DRG.UN",
+    "Ticker":"DRG-UN",
     "Sector":"Financials"
   },
   {
@@ -452,7 +452,7 @@
   },
   {
     "Stock Name":"Empire Company Limited Non-Voting Class A Shares",
-    "Ticker":"EMP.A",
+    "Ticker":"EMP-A",
     "Sector":"Consumer Staples"
   },
   {
@@ -547,7 +547,7 @@
   },
   {
     "Stock Name":"CGI Group Inc. Class A Subordinate  Voting Shares",
-    "Ticker":"GIB.A",
+    "Ticker":"GIB-A",
     "Sector":"Information Technology"
   },
   {
@@ -557,7 +557,7 @@
   },
   {
     "Stock Name":"Granite Real Estate Investment Trust",
-    "Ticker":"GRT.UN",
+    "Ticker":"GRT-UN",
     "Sector":"Financials"
   },
   {
@@ -587,7 +587,7 @@
   },
   {
     "Stock Name":"H&R Real Estate Investment Trust",
-    "Ticker":"HR.UN",
+    "Ticker":"HR-UN",
     "Sector":"Financials"
   },
   {
@@ -797,7 +797,7 @@
   },
   {
     "Stock Name":"Northview Apartment Real Estate Investment Trust",
-    "Ticker":"NVU.UN",
+    "Ticker":"NVU-UN",
     "Sector":"Financials"
   },
   {
@@ -852,7 +852,7 @@
   },
   {
     "Stock Name":"Jean Coutu Group (PJC) Inc. (The)",
-    "Ticker":"PJC.A",
+    "Ticker":"PJC-A",
     "Sector":"Consumer Staples"
   },
   {
@@ -922,7 +922,7 @@
   },
   {
     "Stock Name":"Quebecor Inc. Class B Subordinate Voting Shares",
-    "Ticker":"QBR.B",
+    "Ticker":"QBR-B",
     "Sector":"Consumer Discretionary"
   },
   {
@@ -937,17 +937,17 @@
   },
   {
     "Stock Name":"Rogers Communications Inc. Class B Non-voting Shares",
-    "Ticker":"RCI.B",
+    "Ticker":"RCI-B",
     "Sector":"Telecommunications"
   },
   {
     "Stock Name":"Canadian Real Estate Investment Trust",
-    "Ticker":"REF.UN",
+    "Ticker":"REF-UN",
     "Sector":"Financials"
   },
   {
     "Stock Name":"RioCan Real Estate Investment Trust",
-    "Ticker":"REI.UN",
+    "Ticker":"REI-UN",
     "Sector":"Financials"
   },
   {
@@ -997,7 +997,7 @@
   },
   {
     "Stock Name":"Shaw Communications Inc. Class B Non-voting Shares",
-    "Ticker":"SJR.B",
+    "Ticker":"SJR-B",
     "Sector":"Consumer Discretionary"
   },
   {
@@ -1027,7 +1027,7 @@
   },
   {
     "Stock Name":"Smart Real Estate Investment Trust",
-    "Ticker":"SRU.UN",
+    "Ticker":"SRU-UN",
     "Sector":"Financials"
   },
   {
@@ -1062,12 +1062,12 @@
   },
   {
     "Stock Name":"Teck Resources Limited Class B Subordinate Voting Shares",
-    "Ticker":"TCK.B",
+    "Ticker":"TCK-B",
     "Sector":"Industrials"
   },
   {
     "Stock Name":"Transcontinental Inc. Class A Subordinate Voting Shares",
-    "Ticker":"TCL.A",
+    "Ticker":"TCL-A",
     "Sector":"Financials"
   },
   {
