@@ -37,7 +37,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         self.tableView.tableHeaderView = self.resultSearchController.searchBar
         self.resultSearchController.searchBar.setValue("X", forKey: "_cancelButtonText")
         
-        insertJSONToSearchArray("TSX", exchange: "TSE")
+        insertJSONToSearchArray("TSX", exchange: "TSX")
         insertJSONToSearchArray("NASDAQ", exchange: "NASDAQ")
         
         //hide search bar when push to detail view
@@ -114,10 +114,10 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
             cell.symbolLabel.text =  self.filterArray[indexPath.row].symbol
             cell.exchangeLabel.text = self.filterArray[indexPath.row].exchange
             
-            if(cell.exchangeLabel.text == "NYSE"){
+            if(cell.exchangeLabel.text == "NASDAQ"){
                 cell.exchangeLabel.backgroundColor = UIColor.blueColor()
             }
-            else if(cell.exchangeLabel.text == "TSE"){
+            else if(cell.exchangeLabel.text == "TSX"){
                 cell.exchangeLabel.backgroundColor = UIColor.magentaColor()
             } 
             

@@ -74,7 +74,7 @@ class AddToPortfolioViewController: UIViewController, UITextFieldDelegate {
     
     func stockUpdated(notification: NSNotification){
         let quote: NSDictionary = notification.userInfo![kNotificationStockUpdated] as! NSDictionary
-        print(quote)
+        //print(quote)
         
         //set the price
         priceTextField.text = quote.objectForKey("LastTradePriceOnly") as? String
@@ -182,8 +182,8 @@ class AddToPortfolioViewController: UIViewController, UITextFieldDelegate {
             
             let record = results[0]
             
-            print("updating")
-            print(record)
+            //print("updating")
+            //print(record)
             
             //get original share number
             let oldNumShare: Int = (record.valueForKey("numShare") as? Int)!
