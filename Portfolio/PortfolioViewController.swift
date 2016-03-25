@@ -59,8 +59,6 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "currencyUpdated:", name: kNotificationCurrencyUpdated, object: nil)
         self.tableView.reloadData()
         
-        //get currency & stock price
-        updateEverything()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -74,6 +72,9 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         }
         
         self.tableView.reloadData()
+        
+        //get currency & stock price
+        updateEverything()
     }
     
     func setChart(dataPoints: [String], values: [Double]) {
@@ -149,7 +150,6 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
     
     func controllerDidChangeContent(controller: NSFetchedResultsController) {
         tableView.endUpdates()
-        updateEverything()
     }
     
     func controller(controller: NSFetchedResultsController, didChangeSection sectionInfo: NSFetchedResultsSectionInfo, atIndex sectionIndex: Int, forChangeType type: NSFetchedResultsChangeType) {
