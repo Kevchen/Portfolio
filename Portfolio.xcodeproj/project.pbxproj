@@ -93,6 +93,7 @@
 /* Begin PBXFileReference section */
 		0A54983A1C91F90900FDDED3 /* NASDAQ.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = NASDAQ.json; path = ../NASDAQ.json; sourceTree = "<group>"; };
 		0AFD8DD91C896E9900BEE081 /* TSX.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TSX.json; sourceTree = SOURCE_ROOT; };
+		3FEA7E001CA49B1000103619 /* Portfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Portfolio.entitlements; sourceTree = "<group>"; };
 		6534F73A1C3C8CE00006622F /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6534F73D1C3C8CE00006622F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6534F7421C3C8CE00006622F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -172,6 +173,7 @@
 		6534F73C1C3C8CE00006622F /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				3FEA7E001CA49B1000103619 /* Portfolio.entitlements */,
 				0A54983A1C91F90900FDDED3 /* NASDAQ.json */,
 				0AFD8DD91C896E9900BEE081 /* TSX.json */,
 				6534F73D1C3C8CE00006622F /* AppDelegate.swift */,
@@ -291,6 +293,12 @@
 				TargetAttributes = {
 					6534F7391C3C8CE00006622F = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7H59CKHWLQ;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					6534F74D1C3C8CE00006622F = {
 						CreatedOnToolsVersion = 7.2;
@@ -545,11 +553,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Portfolio/Portfolio.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Portfolio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ECE496.Portfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -557,11 +570,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Portfolio/Portfolio.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Portfolio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ECE496.Portfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

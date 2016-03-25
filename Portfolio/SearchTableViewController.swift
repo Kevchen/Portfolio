@@ -114,7 +114,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
             cell.symbolLabel.text =  self.filterArray[indexPath.row].symbol
             cell.exchangeLabel.text = self.filterArray[indexPath.row].exchange
             
-            if(cell.exchangeLabel.text == "NYSE"){
+            if(cell.exchangeLabel.text == "NASDAQ"){
                 cell.exchangeLabel.backgroundColor = UIColor.blueColor()
             }
             else if(cell.exchangeLabel.text == "TSE"){
