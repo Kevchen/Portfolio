@@ -39,7 +39,8 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         
         insertJSONToSearchArray("TSX", exchange: "TSX")
         insertJSONToSearchArray("NASDAQ", exchange: "NASDAQ")
-        
+        insertJSONToSearchArray("AMEX", exchange: "AMEX")
+        insertJSONToSearchArray("NYSE", exchange: "NYSE")
         //hide search bar when push to detail view
         self.definesPresentationContext = true
         /*
