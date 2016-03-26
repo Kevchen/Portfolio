@@ -1,0 +1,1899 @@
+{
+"stocks":[
+  {
+    "Ticker":"XXII",
+    "Stock Name":"22nd Century Group, Inc",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"FAX",
+    "Stock Name":"Aberdeen Asia-Pacific Income Fund Inc",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"IAF",
+    "Stock Name":"Aberdeen Australia Equity Fund Inc",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"CH",
+    "Stock Name":"Aberdeen Chile Fund, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"ABE           ",
+    "Stock Name":"Aberdeen Emerging Markets Smaller Company Opportunities Fund I",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"FCO",
+    "Stock Name":"Aberdeen Global Income Fund, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"IF",
+    "Stock Name":"Aberdeen Indonesia Fund, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"ISL",
+    "Stock Name":"Aberdeen Israel Fund, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"ACU",
+    "Stock Name":"Acme United Corporation.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"AIII",
+    "Stock Name":"ACRE Realty Investors, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"ATNM",
+    "Stock Name":"Actinium Pharmaceuticals, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"AE",
+    "Stock Name":"Adams Resources & Energy, Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"ADK",
+    "Stock Name":"Adcare Health Systems Inc",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"ADK^A",
+    "Stock Name":"Adcare Health Systems Inc",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"ACY",
+    "Stock Name":"AeroCentury Corp.",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"WGA",
+    "Stock Name":"AG&E Holdings, Inc.",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"AIRI",
+    "Stock Name":"Air Industries Group",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"AA^",
+    "Stock Name":"Alcoa Inc.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"AXU",
+    "Stock Name":"Alexco Resource Corp",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"AAU",
+    "Stock Name":"Almaden Minerals, Ltd.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"APT",
+    "Stock Name":"Alpha Pro Tech, Ltd.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"AAMC",
+    "Stock Name":"Altisource Asset Management Corp",
+    "Sector":"Finance"
+  },
+  {
+    "Ticker":"DIT",
+    "Stock Name":"AMCON Distributing Company",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"ADGE",
+    "Stock Name":"American DG Energy Inc.",
+    "Sector":"Public Utilities"
+  },
+  {
+    "Ticker":"AFCO",
+    "Stock Name":"American Farmland Company",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"ALN",
+    "Stock Name":"American Lorain Corporation",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"AMS",
+    "Stock Name":"American Shared Hospital Services",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"AMPE",
+    "Stock Name":"Ampio Pharmaceuticals, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"APHB",
+    "Stock Name":"AmpliPhi Biosciences Corporation",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"AXN",
+    "Stock Name":"Aoxing Pharmaceutical Company, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"AMCO",
+    "Stock Name":"Armco Metals Holdings, Inc.",
+    "Sector":"Consumer Durables"
+  },
+  {
+    "Ticker":"HRT",
+    "Stock Name":"Arrhythmia Research Technology Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"AKG",
+    "Stock Name":"Asanko Gold Inc.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"AINC",
+    "Stock Name":"Ashford Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"ASB.WS",
+    "Stock Name":"Associated Banc-Corp",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"AST",
+    "Stock Name":"Asterias Biotherapeutics, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"AWX",
+    "Stock Name":"Avalon Holdings Corporation",
+    "Sector":"Public Utilities"
+  },
+  {
+    "Ticker":"ASM",
+    "Stock Name":"Avino Silver",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"BTG",
+    "Stock Name":"B2Gold Corp",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"BTN",
+    "Stock Name":"Ballantyne Strong, Inc",
+    "Sector":"Miscellaneous"
+  },
+  {
+    "Ticker":"BKJ",
+    "Stock Name":"Bancorp of New Jersey, Inc",
+    "Sector":"Finance"
+  },
+  {
+    "Ticker":"BCV",
+    "Stock Name":"Bancroft Fund Limited",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"BAA",
+    "Stock Name":"BANRO CORPORATION",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"BHB",
+    "Stock Name":"Bar Harbor Bankshares, Inc.",
+    "Sector":"Finance"
+  },
+  {
+    "Ticker":"BRN",
+    "Stock Name":"Barnwell Industries, Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"BGSF",
+    "Stock Name":"BG Staffing Inc",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"BPMX",
+    "Stock Name":"BioPharmX Corporation",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"BTX",
+    "Stock Name":"BioTime, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"BTX.WS",
+    "Stock Name":"BioTime, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"BGI",
+    "Stock Name":"Birks Group Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"BZM",
+    "Stock Name":"BlackRock Maryland Municipal Bond Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"MHE",
+    "Stock Name":"BlackRock Massachusetts Tax-Exempt Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"BLE",
+    "Stock Name":"BlackRock Municipal Income Trust II",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"BLJ",
+    "Stock Name":"Blackrock New Jersey Municipal Bond Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"BFY",
+    "Stock Name":"BlackRock New York Municipal Income Trust II",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"BHV",
+    "Stock Name":"BlackRock Virginia Municipal Bond Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"BDR",
+    "Stock Name":"Blonder Tongue Laboratories, Inc.",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"BRG",
+    "Stock Name":"Bluerock Residential Growth REIT, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"BRG^A",
+    "Stock Name":"Bluerock Residential Growth REIT, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"BVX",
+    "Stock Name":"Bovie Medical Corporation",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"BWL.A",
+    "Stock Name":"Bowl America, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"BTI",
+    "Stock Name":"British American Tobacco p.l.c.",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"CANF",
+    "Stock Name":"Can-Fite Biopharma Ltd",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"ROX",
+    "Stock Name":"Castle Brands, Inc.",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"CAW",
+    "Stock Name":"CCA Industries, Inc.",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"CVM",
+    "Stock Name":"Cel-Sci Corporation",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"CVM.WS",
+    "Stock Name":"Cel-Sci Corporation",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"CEF",
+    "Stock Name":"Central Fund of Canada Limited",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"CET",
+    "Stock Name":"Central Securities Corporation",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"LEU",
+    "Stock Name":"Centrus Energy Corp.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"CCF",
+    "Stock Name":"Chase Corporation",
+    "Sector":"Consumer Durables"
+  },
+  {
+    "Ticker":"CQH",
+    "Stock Name":"Cheniere Energy Partners LP Holdings, LLC",
+    "Sector":"Public Utilities"
+  },
+  {
+    "Ticker":"CQP",
+    "Stock Name":"Cheniere Energy Partners, LP",
+    "Sector":"Public Utilities"
+  },
+  {
+    "Ticker":"LNG",
+    "Stock Name":"Cheniere Energy, Inc.",
+    "Sector":"Public Utilities"
+  },
+  {
+    "Ticker":"CVR",
+    "Stock Name":"Chicago Rivet & Machine Co.",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"CNR",
+    "Stock Name":"China Metro-Rural Holdings Limited",
+    "Sector":"Finance"
+  },
+  {
+    "Ticker":"CPHI",
+    "Stock Name":"China Pharma Holdings, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"CKX",
+    "Stock Name":"CKX Lands, Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"GLV",
+    "Stock Name":"Clough Global Allocation Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"GLQ",
+    "Stock Name":"Clough Global Equity Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"GLO",
+    "Stock Name":"Clough Global Opportunities Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"MOC",
+    "Stock Name":"Command Security Corporation",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"CIX",
+    "Stock Name":"CompX International Inc.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"LODE",
+    "Stock Name":"Comstock Mining, Inc.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"CTO",
+    "Stock Name":"Consolidated-Tomoka Land Co.",
+    "Sector":"Finance"
+  },
+  {
+    "Ticker":"MCF",
+    "Stock Name":"Contango Oil & Gas Company",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"CUO",
+    "Stock Name":"Continental Materials Corporation",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"CMT",
+    "Stock Name":"Core Molding Technologies Inc",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"CVRS",
+    "Stock Name":"Corindus Vascular Robotics, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"CRMD",
+    "Stock Name":"CorMedix Inc",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"CRF",
+    "Stock Name":"Cornerstone Strategic Return Fund, Inc. (The)",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"CLM",
+    "Stock Name":"Cornerstone Strategic Value Fund, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"CVU",
+    "Stock Name":"CPI Aerostructures, Inc.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"CIK",
+    "Stock Name":"Credit Suisse Asset Management Income Fund, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"DHY",
+    "Stock Name":"Credit Suisse High Yield Bond Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"CRHM",
+    "Stock Name":"CRH Medical Corporation",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"CRVP",
+    "Stock Name":"Crystal Rock Holdings, Inc.",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"DAKP",
+    "Stock Name":"Dakota Plains Holdings, Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"DXR",
+    "Stock Name":"Daxor Corporation",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"VCF",
+    "Stock Name":"Delaware Investments Colorado Municipal Income Fund, Inc",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"VFL",
+    "Stock Name":"Delaware Investments Florida Insured Municipal Income Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"VMM",
+    "Stock Name":"Delaware Investments Minnesota Municipal Income Fund II, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"DLA",
+    "Stock Name":"Delta Apparel, Inc.",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"DNN",
+    "Stock Name":"Denison Mine Corp",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"DGSE",
+    "Stock Name":"DGSE Companies, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"DPW",
+    "Stock Name":"Digital Power Corporation",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"DSS",
+    "Stock Name":"Document Security Systems, Inc.",
+    "Sector":"Consumer Durables"
+  },
+  {
+    "Ticker":"DMF",
+    "Stock Name":"Dreyfus Municipal Income, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"DXI",
+    "Stock Name":"DXI Energy Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"GRF",
+    "Stock Name":"Eagle Capital Growth Fund, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"ESTE",
+    "Stock Name":"Earthstone Energy, Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"EVM",
+    "Stock Name":"Eaton Vance California Municipal Bond Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"EIA",
+    "Stock Name":"Eaton Vance California Municipal Bond Fund II",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"CEV",
+    "Stock Name":"Eaton Vance California Municipal Income Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"EVV",
+    "Stock Name":"Eaton Vance Limited Duration Income Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"MAB",
+    "Stock Name":"Eaton Vance Massachusetts Municipal Bond Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"MMV",
+    "Stock Name":"Eaton Vance Massachusetts Municipal Income Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"MIW",
+    "Stock Name":"Eaton Vance Michigan Municipal Bond Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"EMI",
+    "Stock Name":"Eaton Vance Michigan Municipal Income Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"EIM",
+    "Stock Name":"Eaton Vance Municipal Bond Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"EIV",
+    "Stock Name":"Eaton Vance Municipal Bond Fund II",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"EMJ",
+    "Stock Name":"Eaton Vance New Jersey Municipal Bond Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"EVJ",
+    "Stock Name":"Eaton Vance New Jersey Municipal Income Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"ENX",
+    "Stock Name":"Eaton Vance New York Municipal Bond Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NYH",
+    "Stock Name":"Eaton Vance New York Municipal Bond Fund II",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"EVY",
+    "Stock Name":"Eaton Vance New York Municipal Income Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"EIO",
+    "Stock Name":"Eaton Vance Ohio Municipal Bond Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"EVO",
+    "Stock Name":"Eaton Vance Ohio Municipal Income Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"EIP",
+    "Stock Name":"Eaton Vance Pennsylvania Municipal Bond Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"EVP",
+    "Stock Name":"Eaton Vance Pennsylvania Municipal Income Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"ELMD",
+    "Stock Name":"Electromed, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"ETAK",
+    "Stock Name":"Elephant Talk Communications Corp.",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"ELLO",
+    "Stock Name":"Ellomay Capital Ltd.",
+    "Sector":"Public Utilities"
+  },
+  {
+    "Ticker":"ECF",
+    "Stock Name":"Ellsworth Growth and Income Fund Ltd.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"EMAN",
+    "Stock Name":"eMagin Corporation",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"MSN",
+    "Stock Name":"Emerson Radio Corporation",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"UUUU",
+    "Stock Name":"Energy Fuels Inc",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"ENRJ",
+    "Stock Name":"EnerJex Resources, Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"ENRJ^",
+    "Stock Name":"EnerJex Resources, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"ENSV",
+    "Stock Name":"ENSERVCO Corporation",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"ESNC",
+    "Stock Name":"EnSync, Inc.",
+    "Sector":"Public Utilities"
+  },
+  {
+    "Ticker":"EGI",
+    "Stock Name":"Entree Gold Inc",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"EVI",
+    "Stock Name":"EnviroStarm, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"ERB",
+    "Stock Name":"ERBA Diagnostics, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"ERN",
+    "Stock Name":"Erin Energy Corp.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"ESP",
+    "Stock Name":"Espey Mfg. & Electronics Corp.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"EMXX",
+    "Stock Name":"Eurasian Minerals Inc.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"EVBN",
+    "Stock Name":"Evans Bancorp, Inc.",
+    "Sector":"Finance"
+  },
+  {
+    "Ticker":"EPM",
+    "Stock Name":"Evolution Petroleum Corporation, Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"EPM^A",
+    "Stock Name":"Evolution Petroleum Corporation, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"XRA",
+    "Stock Name":"Exeter Resource Corporation",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"FPP",
+    "Stock Name":"FieldPoint Petroleum Corporation",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"FPP.WS",
+    "Stock Name":"FieldPoint Petroleum Corporation",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"FEN",
+    "Stock Name":"First Trust Energy Income and Growth Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"BDL",
+    "Stock Name":"Flanigan&#39;s Enterprises, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"FSI",
+    "Stock Name":"Flexible Solutions International Inc.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"FTF",
+    "Stock Name":"Franklin Limited Duration Income Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"FSP",
+    "Stock Name":"Franklin Street Properties Corp.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"FRD",
+    "Stock Name":"Friedman Industries Inc.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"GGN",
+    "Stock Name":"GAMCO Global Gold, Natural Reources & Income Trust ",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"GGN^B",
+    "Stock Name":"GAMCO Global Gold, Natural Reources & Income Trust ",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"EGAS",
+    "Stock Name":"Gas Natural Inc.",
+    "Sector":"Public Utilities"
+  },
+  {
+    "Ticker":"GST",
+    "Stock Name":"Gastar Exploration Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"GST^A",
+    "Stock Name":"Gastar Exploration Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"GST^B",
+    "Stock Name":"Gastar Exploration Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"JOB",
+    "Stock Name":"General Employment Enterprises, Inc.",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"GMO",
+    "Stock Name":"General Moly, Inc",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"GIG",
+    "Stock Name":"GigOptix, Inc.",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"GSB",
+    "Stock Name":"GlobalSCAPE, Inc.",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"GSAT",
+    "Stock Name":"Globalstar, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"GLOW",
+    "Stock Name":"Glowpoint, Inc.",
+    "Sector":"Public Utilities"
+  },
+  {
+    "Ticker":"GORO",
+    "Stock Name":"Gold Resource Corporation",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"GSV",
+    "Stock Name":"Gold Standard Ventures Corporation",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"AUMN",
+    "Stock Name":"Golden Minerals Company",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"GSS",
+    "Stock Name":"Golden Star Resources, Ltd",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"GV",
+    "Stock Name":"Goldfield Corporation (The)",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"GRC",
+    "Stock Name":"Gorman-Rupp Company (The)",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"GTE",
+    "Stock Name":"Gran Tierra Energy Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"GPL",
+    "Stock Name":"Great Panther Silver Limited",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"SIM",
+    "Stock Name":"Grupo Simec, S.A. de C.V.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"GVP",
+    "Stock Name":"GSE Systems, Inc.",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"HCHC",
+    "Stock Name":"HC2 Holdings, Inc.",
+    "Sector":"Public Utilities"
+  },
+  {
+    "Ticker":"HEB",
+    "Stock Name":"Hemispherx BioPharma, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"HLM^",
+    "Stock Name":"Hillman Group Capital Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"HMG",
+    "Stock Name":"HMG/Courtland Properties, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"HH",
+    "Stock Name":"Hooper Holmes, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"HUSA",
+    "Stock Name":"Houston American Energy Corporation",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"IBIO",
+    "Stock Name":"iBio, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"IBO",
+    "Stock Name":"IBO (Listing Market - NYSE Amex Network B F)",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"IDI",
+    "Stock Name":"IDI, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"IEC",
+    "Stock Name":"IEC Electronics Corp.",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"IMUC",
+    "Stock Name":"ImmunoCellular Therapeutics, Ltd.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"IMH",
+    "Stock Name":"Impac Mortgage Holdings, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"IMO",
+    "Stock Name":"Imperial Oil Limited",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"IOT",
+    "Stock Name":"Income Opportunity Realty Investors, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"IRT",
+    "Stock Name":"Independence Realty Trust, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"IGC",
+    "Stock Name":"India Globalization Capital Inc.",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"INFU",
+    "Stock Name":"InfuSystems Holdings, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"IHT",
+    "Stock Name":"InnSuites Hospitality Trust",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"NSPR",
+    "Stock Name":"InspireMD, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"IFMI",
+    "Stock Name":"Institutional Financial Markets, Inc.",
+    "Sector":"Finance"
+  },
+  {
+    "Ticker":"IDN",
+    "Stock Name":"Intellicheck Mobilisa, Inc.",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"INS",
+    "Stock Name":"Intelligent Systems Corporation",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"THM",
+    "Stock Name":"International Tower Hill Mines Ltd",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"INTT",
+    "Stock Name":"inTest Corporation",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"INUV",
+    "Stock Name":"Inuvo, Inc",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"VKI",
+    "Stock Name":"Invesco Advantage Municipal Income Trust II",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"ISR",
+    "Stock Name":"IsoRay, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"ISDR",
+    "Stock Name":"Issuer Direct Corporation",
+    "Sector":"Miscellaneous"
+  },
+  {
+    "Ticker":"JRJR",
+    "Stock Name":"JRjr33, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"KIQ",
+    "Stock Name":"Kelso Technologies Inc",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"KLDX",
+    "Stock Name":"Klondex Mines Ltd.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"LTS",
+    "Stock Name":"Ladenburg Thalmann Financial Services Inc",
+    "Sector":"Finance"
+  },
+  {
+    "Ticker":"LTS^A",
+    "Stock Name":"Ladenburg Thalmann Financial Services Inc",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"LSG",
+    "Stock Name":"Lake Shore Gold Corp",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"LAQ",
+    "Stock Name":"Latin America Equity Fund, Inc. (The)",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"LGL",
+    "Stock Name":"LGL Group, Inc. (The)",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"LBY",
+    "Stock Name":"Libbey, Inc.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"LIQT",
+    "Stock Name":"LiqTech International, Inc.",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"LEI",
+    "Stock Name":"Lucas Energy, Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"MCZ",
+    "Stock Name":"Mad Catz Interactive Inc",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"MVG",
+    "Stock Name":"Mag Silver Corporation",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"MJCO",
+    "Stock Name":"Majesco",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"MSTX",
+    "Stock Name":"Mast Therapeutics, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"MHH",
+    "Stock Name":"Mastech Holdings, Inc",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"MDGN",
+    "Stock Name":"Medgenics, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"MDGN.WS",
+    "Stock Name":"Medgenics, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"IPB",
+    "Stock Name":"Merrill Lynch & Co., Inc.",
+    "Sector":"Finance"
+  },
+  {
+    "Ticker":"MXC",
+    "Stock Name":"Mexco Energy Corporation",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"CCA",
+    "Stock Name":"MFS California Insured Municipal Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"MGT",
+    "Stock Name":"MGT Capital Investments Inc",
+    "Sector":"Miscellaneous"
+  },
+  {
+    "Ticker":"MLSS",
+    "Stock Name":"Milestone Scientific, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"MGH",
+    "Stock Name":"Minco Gold Corporation",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"MGN",
+    "Stock Name":"Mines Management, Inc.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"MVF",
+    "Stock Name":"MuniVest Fund, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"MZA",
+    "Stock Name":"MuniYield Arizona Fund, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NNVC",
+    "Stock Name":"NanoViricides, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"NHC",
+    "Stock Name":"National HealthCare Corporation",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"NAVB",
+    "Stock Name":"Navidea Biopharmaceuticals, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"NTIP",
+    "Stock Name":"Network-1 Technologies, Inc.",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"NBW",
+    "Stock Name":"Neuberger Berman California Intermediate Municipal Fund Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NHS",
+    "Stock Name":"Neuberger Berman High Yield Strategies Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NBH",
+    "Stock Name":"Neuberger Berman Intermediate Municipal Fund Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NML",
+    "Stock Name":"Neuberger Berman MLP Income Fund Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NBO",
+    "Stock Name":"Neuberger Berman New York Intermediate Municipal Fund Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NRO",
+    "Stock Name":"Neuberger Berman Real Estate Securities Income Fund, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"UWN",
+    "Stock Name":"Nevada Gold & Casinos, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"NSU",
+    "Stock Name":"Nevsun Resources Ltd",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"GBR",
+    "Stock Name":"New Concept Energy, Inc",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"NEN",
+    "Stock Name":"New England Realty Associates Limited Partnership",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"NGD",
+    "Stock Name":"NEW GOLD INC.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"HLTH",
+    "Stock Name":"Nobilis Health Corp.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"NSAT",
+    "Stock Name":"Norsat International Inc.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"NAK",
+    "Stock Name":"Northern Dynasty Minerals, Ltd.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"NOG",
+    "Stock Name":"Northern Oil and Gas, Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"NBY",
+    "Stock Name":"NovaBay Pharmaceuticals, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NCQ",
+    "Stock Name":"NovaCopper Inc.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"NG",
+    "Stock Name":"Novagold Resources Inc.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"NTN",
+    "Stock Name":"NTN Buzztime, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"NVX",
+    "Stock Name":"Nuveen California Dividend Advantage Municipal Fund 2",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NZH",
+    "Stock Name":"Nuveen California Dividend Advantage Municipal Fund 3",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NCB",
+    "Stock Name":"Nuveen California Municipal Value Fund 2",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"CFD",
+    "Stock Name":"Nuveen Diversified Commodity Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NXZ",
+    "Stock Name":"Nuveen Dividend Advantage Municipal Fund 2",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NZF",
+    "Stock Name":"Nuveen Dividend Advantage Municipal Fund 3",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NVG",
+    "Stock Name":"Nuveen Dividend Advantage Municipal Income Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"CTF",
+    "Stock Name":"Nuveen Long/Short Commodity Total Return Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NOM",
+    "Stock Name":"Nuveen Missouri Premium Income Municipal Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NMZ",
+    "Stock Name":"Nuveen Municipal High Income Opportunity Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NJV",
+    "Stock Name":"Nuveen New Jersey Municipal Value Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NYV",
+    "Stock Name":"Nuveen New York Municipal Value Fund 2",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"NPN",
+    "Stock Name":"Nuveen Pennsylvania Municipal Value Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"JRS",
+    "Stock Name":"Nuveen Real Estate Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"OCX",
+    "Stock Name":"OncoCyte Corporation",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"OGEN",
+    "Stock Name":"Oragenics, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"TIS",
+    "Stock Name":"Orchids Paper Products Company",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"ONVO",
+    "Stock Name":"Organovo Holdings, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"ONP",
+    "Stock Name":"Orient Paper, Inc.",
+    "Sector":"Consumer Durables"
+  },
+  {
+    "Ticker":"OSG",
+    "Stock Name":"Overseas Shipholding Group, Inc.",
+    "Sector":"Transportation"
+  },
+  {
+    "Ticker":"OSGB",
+    "Stock Name":"Overseas Shipholding Group, Inc.",
+    "Sector":"Transportation"
+  },
+  {
+    "Ticker":"ORM",
+    "Stock Name":"Owens Realty Mortgage, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"PHF",
+    "Stock Name":"Pacholder High Yield Fund, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"PBM",
+    "Stock Name":"Pacific Booker Minerals Inc",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"PCG^A",
+    "Stock Name":"Pacific Gas & Electric Co.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"PCG^B",
+    "Stock Name":"Pacific Gas & Electric Co.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"PCG^C",
+    "Stock Name":"Pacific Gas & Electric Co.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"PCG^D",
+    "Stock Name":"Pacific Gas & Electric Co.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"PCG^E",
+    "Stock Name":"Pacific Gas & Electric Co.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"PCG^G",
+    "Stock Name":"Pacific Gas & Electric Co.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"PCG^H",
+    "Stock Name":"Pacific Gas & Electric Co.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"PCG^I",
+    "Stock Name":"Pacific Gas & Electric Co.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"PTN",
+    "Stock Name":"Palatin Technologies, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"PARR",
+    "Stock Name":"Par Pacific Holdings, Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"PZG",
+    "Stock Name":"Paramount Gold Nevada Corp.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"PRK",
+    "Stock Name":"Park National Corporation",
+    "Sector":"Finance"
+  },
+  {
+    "Ticker":"PED",
+    "Stock Name":"Pedevco Corp.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"PFNX",
+    "Stock Name":"Pfenex Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"PIP",
+    "Stock Name":"PharmAthene, Inc",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"HNW",
+    "Stock Name":"Pioneer Diversified High Income Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"PLG",
+    "Stock Name":"Platinum Group Metals Ltd.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"PLM",
+    "Stock Name":"Polymet Mining Corp.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"PW",
+    "Stock Name":"Power REIT",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"PW^A",
+    "Stock Name":"Power REIT",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"PLX",
+    "Stock Name":"Protalix BioTherapeutics, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"PVCT",
+    "Stock Name":"Provectus Biopharmaceuticals, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"PVCT.WS",
+    "Stock Name":"Provectus Biopharmaceuticals, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"RLGT",
+    "Stock Name":"Radiant Logistics, Inc.",
+    "Sector":"Transportation"
+  },
+  {
+    "Ticker":"RLGT^A",
+    "Stock Name":"Radiant Logistics, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"UTG",
+    "Stock Name":"Reaves Utility Income Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"REED",
+    "Stock Name":"Reeds, Inc.",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"RWC",
+    "Stock Name":"RELM Wireless Corporation",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"RCG",
+    "Stock Name":"RENN Fund, Inc.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"RVP",
+    "Stock Name":"Retractable Technologies, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"RNN",
+    "Stock Name":"Rexahn Pharmaceuticals, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"RIC",
+    "Stock Name":"Richmont Mines, Inc.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"REI",
+    "Stock Name":"Ring Energy, Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"RIF",
+    "Stock Name":"RMR Real Estate Income Fund.",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"SGA",
+    "Stock Name":"Saga Communications, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"SSN",
+    "Stock Name":"Samson Oil & Gas Limited",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"SPP",
+    "Stock Name":"Sanchez Production Partners LP",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"SAND          ",
+    "Stock Name":"Sandstorm Gold Ltd",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"SEB",
+    "Stock Name":"Seaboard Corporation",
+    "Sector":"Finance"
+  },
+  {
+    "Ticker":"SENS",
+    "Stock Name":"Senseonics Holdings, Inc.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"SVT",
+    "Stock Name":"Servotronics, Inc.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"SIF",
+    "Stock Name":"SIFCO Industries, Inc.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"SKY",
+    "Stock Name":"Skyline Corporation",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"SLI",
+    "Stock Name":"SL Industries, Inc.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"XPL",
+    "Stock Name":"Solitario Exploration & Royalty Corp",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"SCE^B",
+    "Stock Name":"Southern California Edison Company",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"SCE^C",
+    "Stock Name":"Southern California Edison Company",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"SCE^D",
+    "Stock Name":"Southern California Edison Company",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"SCE^E",
+    "Stock Name":"Southern California Edison Company",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"SGB",
+    "Stock Name":"Southwest Georgia Financial Corporation",
+    "Sector":"Finance"
+  },
+  {
+    "Ticker":"LOV",
+    "Stock Name":"Spark Networks, Inc.",
+    "Sector":"Miscellaneous"
+  },
+  {
+    "Ticker":"STRP",
+    "Stock Name":"Straight Path Communications Inc.",
+    "Sector":"Public Utilities"
+  },
+  {
+    "Ticker":"SSY",
+    "Stock Name":"SunLink Health Systems, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"SDPI",
+    "Stock Name":"Superior Drilling Products, Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"STS",
+    "Stock Name":"Supreme Industries, Inc.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"SYRG",
+    "Stock Name":"Synergy Resources Corporation",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"SYN",
+    "Stock Name":"Synthetic Biologics, Inc",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"TRX",
+    "Stock Name":"Tanzanian Royalty Exploration Corporation",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"TGB",
+    "Stock Name":"Taseko Mines Limited",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"TIK",
+    "Stock Name":"Tel-Instrument Electronics Corp.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"TGC",
+    "Stock Name":"Tengasco, Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"GLU",
+    "Stock Name":"The Gabelli Global Utility and Income Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"GLU^A",
+    "Stock Name":"The Gabelli Global Utility and Income Trust",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"TXMD",
+    "Stock Name":"TherapeuticsMD, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"TPI",
+    "Stock Name":"Tianyin Pharmaceutical Co., Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"TGD",
+    "Stock Name":"Timmons Gold Corp",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"TOF",
+    "Stock Name":"Tofutti Brands Inc.",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"TMP",
+    "Stock Name":"Tompkins Financial Corporation",
+    "Sector":"Finance"
+  },
+  {
+    "Ticker":"TAT",
+    "Stock Name":"Transatlantic Petroleum Ltd",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"TRXC",
+    "Stock Name":"TransEnterix, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"TPLM",
+    "Stock Name":"Triangle Petroleum Corporation",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"TPHS",
+    "Stock Name":"Trinity Place Holdings Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"TRT",
+    "Stock Name":"Trio-Tech International",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"HTM",
+    "Stock Name":"U.S. Geothermal Inc.",
+    "Sector":"Public Utilities"
+  },
+  {
+    "Ticker":"UFAB",
+    "Stock Name":"Unique Fabricating, Inc.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"UAMY",
+    "Stock Name":"United States Antimony Corporation",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"UUU",
+    "Stock Name":"Universal Security Instruments, Inc.",
+    "Sector":"Consumer Non-Durables"
+  },
+  {
+    "Ticker":"UQM",
+    "Stock Name":"UQM TECHNOLOGIES INC",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"URG",
+    "Stock Name":"Ur Energy Inc",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"UEC",
+    "Stock Name":"Uranium Energy Corp.",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"VSR",
+    "Stock Name":"Versar, Inc.",
+    "Sector":"Consumer Services"
+  },
+  {
+    "Ticker":"VII",
+    "Stock Name":"Vicon Industries, Inc.",
+    "Sector":"Consumer Durables"
+  },
+  {
+    "Ticker":"VHC",
+    "Stock Name":"VirnetX Holding Corp",
+    "Sector":"Miscellaneous"
+  },
+  {
+    "Ticker":"VGZ",
+    "Stock Name":"Vista Gold Corporation",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"VNRX",
+    "Stock Name":"VolitionRX Limited",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"VISI",
+    "Stock Name":"Volt Information Sciences, Inc.",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"EAD",
+    "Stock Name":"Wells Fargo Income Opportunities Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"ERC",
+    "Stock Name":"Wells Fargo Multi-Sector Income Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"ERH",
+    "Stock Name":"Wells Fargo Utilities and High Income Fund",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"SBI",
+    "Stock Name":"Western Asset Intermediate Muni Fund Inc",
+    "Sector":"n/a"
+  },
+  {
+    "Ticker":"WRN",
+    "Stock Name":"Western Copper and Gold Corporation",
+    "Sector":"Basic Industries"
+  },
+  {
+    "Ticker":"WYY",
+    "Stock Name":"WidePoint Corporation",
+    "Sector":"Technology"
+  },
+  {
+    "Ticker":"WTT",
+    "Stock Name":"Wireless Telecom Group,  Inc.",
+    "Sector":"Capital Goods"
+  },
+  {
+    "Ticker":"XTNT",
+    "Stock Name":"Xtant Medical Holdings, Inc.",
+    "Sector":"Health Care"
+  },
+  {
+    "Ticker":"YUMA",
+    "Stock Name":"Yuma Energy, Inc.",
+    "Sector":"Energy"
+  },
+  {
+    "Ticker":"YUMA^A",
+    "Stock Name":"Yuma Energy, Inc.",
+    "Sector":"n/a"
+  }
+]
+}

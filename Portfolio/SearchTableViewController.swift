@@ -39,7 +39,8 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         
         insertJSONToSearchArray("TSX", exchange: "TSX")
         insertJSONToSearchArray("NASDAQ", exchange: "NASDAQ")
-        
+        insertJSONToSearchArray("AMEX", exchange: "AMEX")
+        insertJSONToSearchArray("NYSE", exchange: "NYSE")
         //hide search bar when push to detail view
         self.definesPresentationContext = true
         /*
@@ -119,7 +120,13 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
             }
             else if(cell.exchangeLabel.text == "TSX"){
                 cell.exchangeLabel.backgroundColor = UIColor.magentaColor()
-            } 
+            }
+            else if(cell.exchangeLabel.text == "AMEX"){
+                cell.exchangeLabel.backgroundColor = UIColor.purpleColor()
+            }
+            else if(cell.exchangeLabel.text == "NYSE"){
+                cell.exchangeLabel.backgroundColor = UIColor.cyanColor()
+            }
             
         }
         else

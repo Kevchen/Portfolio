@@ -20,6 +20,10 @@ class DetailViewController: UIViewController  {
     @IBOutlet weak var exchangeLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var risefallLabel: UILabel!
+    @IBOutlet weak var openingPriceLabel: UILabel!
+    @IBOutlet weak var highPriceLabel: UILabel!
+    @IBOutlet weak var lowPriceLabel: UILabel!
+    @IBOutlet weak var mrktCapLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -81,10 +85,17 @@ class DetailViewController: UIViewController  {
     
     func stockUpdated(notification: NSNotification){
         let quote: NSDictionary = notification.userInfo![kNotificationStockUpdated] as! NSDictionary
-        print(quote)
+        //print(quote)
         
         //set the price
         priceLabel.text = quote.objectForKey("LastTradePriceOnly") as? String
+        openingPriceLabel.text = quote.objectForKey("Open") as? String
+        highPriceLabel.text = quote.objectForKey("DaysHigh") as? String
+        lowPriceLabel.text = quote.objectForKey("DaysLow") as? String
+        mrktCapLabel.text = quote.objectForKey("MarketCapitalization") as? String
+        if(mrktCapLabel.text==nil){
+            mrktCapLabel.text = "N/A"
+        }
         
         //set the change and percent
         let change: String = quote.objectForKey("Change") as! String
