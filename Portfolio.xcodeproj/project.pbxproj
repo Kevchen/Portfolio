@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0A54983B1C91F90900FDDED3 /* NASDAQ.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A54983A1C91F90900FDDED3 /* NASDAQ.json */; };
 		0AFD8DDA1C896E9900BEE081 /* TSX.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AFD8DD91C896E9900BEE081 /* TSX.json */; };
+		6532D9181CA614CB008EC8EC /* AMEX.json in Resources */ = {isa = PBXBuildFile; fileRef = 6532D9161CA614CB008EC8EC /* AMEX.json */; };
+		6532D9191CA614CB008EC8EC /* NYSE.json in Resources */ = {isa = PBXBuildFile; fileRef = 6532D9171CA614CB008EC8EC /* NYSE.json */; };
 		6534F73E1C3C8CE00006622F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6534F73D1C3C8CE00006622F /* AppDelegate.swift */; };
 		6534F7431C3C8CE00006622F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6534F7411C3C8CE00006622F /* Main.storyboard */; };
 		6534F7451C3C8CE00006622F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6534F7441C3C8CE00006622F /* Assets.xcassets */; };
@@ -94,6 +96,8 @@
 		0A54983A1C91F90900FDDED3 /* NASDAQ.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = NASDAQ.json; path = ../NASDAQ.json; sourceTree = "<group>"; };
 		0AFD8DD91C896E9900BEE081 /* TSX.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TSX.json; sourceTree = SOURCE_ROOT; };
 		3FEA7E001CA49B1000103619 /* Portfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Portfolio.entitlements; sourceTree = "<group>"; };
+		6532D9161CA614CB008EC8EC /* AMEX.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AMEX.json; sourceTree = SOURCE_ROOT; };
+		6532D9171CA614CB008EC8EC /* NYSE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NYSE.json; sourceTree = SOURCE_ROOT; };
 		6534F73A1C3C8CE00006622F /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6534F73D1C3C8CE00006622F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6534F7421C3C8CE00006622F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				3FEA7E001CA49B1000103619 /* Portfolio.entitlements */,
+				6532D9161CA614CB008EC8EC /* AMEX.json */,
+				6532D9171CA614CB008EC8EC /* NYSE.json */,
 				0A54983A1C91F90900FDDED3 /* NASDAQ.json */,
 				0AFD8DD91C896E9900BEE081 /* TSX.json */,
 				6534F73D1C3C8CE00006622F /* AppDelegate.swift */,
@@ -365,7 +371,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6532D9191CA614CB008EC8EC /* NYSE.json in Resources */,
 				6534F7481C3C8CE00006622F /* LaunchScreen.storyboard in Resources */,
+				6532D9181CA614CB008EC8EC /* AMEX.json in Resources */,
 				6534F7931C3ED0CA0006622F /* PortfolioData.plist in Resources */,
 				6534F7451C3C8CE00006622F /* Assets.xcassets in Resources */,
 				0A54983B1C91F90900FDDED3 /* NASDAQ.json in Resources */,

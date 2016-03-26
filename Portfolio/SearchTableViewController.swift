@@ -125,7 +125,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
                 cell.exchangeLabel.backgroundColor = UIColor.purpleColor()
             }
             else if(cell.exchangeLabel.text == "NYSE"){
-                cell.exchangeLabel.backgroundColor = UIColor.cyanColor()
+                cell.exchangeLabel.backgroundColor = UIColor.greenColor()
             }
             
         }
