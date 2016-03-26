@@ -43,25 +43,6 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         insertJSONToSearchArray("NYSE", exchange: "NYSE")
         //hide search bar when push to detail view
         self.definesPresentationContext = true
-        /*
-        //added items
-        self.searchArray += [StockItem(name: "TD Canada Trust", symbol:  "TD", exchange: "NYSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "Apple Inc", symbol: "AAPL", exchange: "NYSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "Google", symbol:  "GOOG", exchange: "NYSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "General Motors", symbol:  "GM", exchange: "NYSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "Facebook", symbol:  "FB", exchange: "NYSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "Tesla Motors", symbol:  "TSLA", exchange: "NYSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "Microsoft", symbol:  "MSFT", exchange: "NYSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "LinkedIn Corp", symbol:  "LNKD", exchange: "NYSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "Intel", symbol:  "INTC", exchange: "NYSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "Nike", symbol:  "NKE", exchange: "NYSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "NVIDIA", symbol:  "NVDA", exchange: "NYSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "TD Canada Trust", symbol:  "TD", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "Magna", symbol:  "MG", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "Celestica", symbol:  "CLS", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "Royal Bank Of Canada", symbol:  "RY", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        self.searchArray += [StockItem(name: "Air Canada", symbol:  "AC", exchange: "TSE" , numShare: 0, purchaseDate: NSDate(), price: 0)]
-        */
         self.tableView.reloadData()
     }
     

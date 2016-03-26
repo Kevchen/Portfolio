@@ -41,8 +41,8 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         
         // Do any additional setup after loading the view.
         
-        let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
-        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
+        let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
         setChart(months, values: unitsSold)
 
         //dont display back button on main view
@@ -79,6 +79,7 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
     
     func setChart(dataPoints: [String], values: [Double]) {
         
+        
         var dataEntries: [ChartDataEntry] = []
         
         for i in 0..<dataPoints.count {
@@ -86,7 +87,7 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
             dataEntries.append(dataEntry)
         }
         
-        let pieChartDataSet = PieChartDataSet(yVals: dataEntries, label: "Units Sold")
+        let pieChartDataSet = PieChartDataSet(yVals: dataEntries, label: "Net worth")
         let pieChartData = PieChartData(xVals: dataPoints, dataSet: pieChartDataSet)
         pieChartView.data = pieChartData
         
@@ -107,6 +108,8 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Units Sold")
         let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
         lineChartView.data = lineChartData
+        
+        pieChartView.animate(xAxisDuration: 2.0)
         
     }
     
@@ -266,7 +269,7 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         //NYQ for NYSE
         //ASE for AMEX in yahoo JSON
         let price = quote.objectForKey("LastTradePriceOnly") as? String
-        let currency = quote.objectForKey("Currency") as? String
+        //let currency = quote.objectForKey("Currency") as? String
         var symbol:String = (quote.objectForKey("symbol") as? String)!
         var exchange:String = (quote.objectForKey("StockExchange") as? String)!
         
@@ -345,6 +348,9 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         }
         
         netWorthLabel.text = String(format:"%.02f", networth)
+        
+        //update chart
+        //setChart(<#T##dataPoints: [String]##[String]#>, values: <#T##[Double]#>)
     }
     
     func updateEverything(){

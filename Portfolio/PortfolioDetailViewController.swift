@@ -49,6 +49,7 @@ class PortfolioDetailViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func showDatePicker(sender: UITextField) {
         let datePickerView:UIDatePicker = UIDatePicker()
+        datePickerView.maximumDate = NSDate()
         datePickerView.datePickerMode = UIDatePickerMode.Date
         sender.inputView = datePickerView
         datePickerView.addTarget(self, action: Selector("datePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
