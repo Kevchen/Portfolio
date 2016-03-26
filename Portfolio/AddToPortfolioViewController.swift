@@ -91,6 +91,7 @@ class AddToPortfolioViewController: UIViewController, UITextFieldDelegate {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
         dateTextField.text = dateFormatter.stringFromDate(sender.date)
+        date = sender.date
     }
     
     override func didReceiveMemoryWarning() {

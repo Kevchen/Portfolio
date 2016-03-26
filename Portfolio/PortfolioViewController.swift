@@ -259,21 +259,35 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
     
     func stockUpdated(notification: NSNotification){
         let quote: NSDictionary = notification.userInfo![kNotificationStockUpdated] as! NSDictionary
-        //print(quote)
+        print(quote)
         
-        //NCM for NASDAQ, TOR for TSX in yahoo JSON
+        //NMS for NASDAQ,
+        //TOR for TSX 
+        //NYQ for NYSE
+        //ASE for AMEX in yahoo JSON
         let price = quote.objectForKey("LastTradePriceOnly") as? String
         let currency = quote.objectForKey("Currency") as? String
         var symbol:String = (quote.objectForKey("symbol") as? String)!
+        var exchange:String = (quote.objectForKey("StockExchange") as? String)!
         
-        var exchange:String = "TSX"
-        if(currency == "USD"){
+        switch(exchange){
+        case "NMS":
             exchange = "NASDAQ"
-        }
-        else if(currency == "CAD"){
+            break
+        case "NYQ":
+            exchange = "NYSE"
+            break
+        case "ASE":
+            exchange = "AMEX"
+            break
+        case "TOR":
             exchange = "TSX"
             //remove ".TO" in the symbol that yahoo returns, we don't need that
             symbol = String(symbol.characters.dropLast(3))
+            break
+        default:
+            exchange = "N/A"
+            break
         }
         
         //find that particular stock in portfolio
@@ -285,14 +299,14 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
                 let numShare:Double = stock.valueForKey("numShare") as! Double
                 let worth:Double = Double(price!)! * numShare
                     
-                if(exchange == "NASDAQ"){
-                    currentUSDWorth += worth
-                }
-                else if(exchange == "TSX"){
+                if(exchange == "TSX"){
                     currentCADWorth += worth
                 }
+                else{
+                    currentUSDWorth += worth
+                }
                     
-                //print("currentUSDWorth: \(currentUSDWorth), currentCADWorth: \(currentCADWorth)")
+                print("currentUSDWorth: \(currentUSDWorth), currentCADWorth: \(currentCADWorth)")
             }
         }
         displayNetWorth()

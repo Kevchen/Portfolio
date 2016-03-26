@@ -20,7 +20,8 @@ class PortfolioDetailViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var editButton: UIBarButtonItem!
     @IBOutlet weak var deleteButton: UIButton!
 
-
+    
+    var date:NSDate!
     
     var itemToPass: NSManagedObject!
     
@@ -34,7 +35,7 @@ class PortfolioDetailViewController: UIViewController, UITextFieldDelegate {
         numShareTextField.text = String(itemToPass.valueForKey("numShare")!)
         priceTextField.text    = String(itemToPass.valueForKey("price")!)
     
-        let date  = itemToPass.valueForKey("date") as! NSDate
+        date  = itemToPass.valueForKey("date") as! NSDate
         let dateFormatter:NSDateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
         dateTextField.text = dateFormatter.stringFromDate(date)
@@ -57,6 +58,7 @@ class PortfolioDetailViewController: UIViewController, UITextFieldDelegate {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
         dateTextField.text = dateFormatter.stringFromDate(sender.date)
+        date = sender.date
     }
 
     @IBAction func allowEdit(sender: UIButton) {
@@ -75,6 +77,24 @@ class PortfolioDetailViewController: UIViewController, UITextFieldDelegate {
             deleteButton.hidden = true
             
             //do the saving
+            saveChanges()
+        }
+    }
+    
+    func saveChanges(){
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        
+        self.itemToPass.setValue(Double(priceTextField.text!), forKey: "price")
+        self.itemToPass.setValue(Int(numShareTextField.text!), forKey: "numShare")
+        self.itemToPass.setValue(date, forKey: "date")
+        
+        //core data save
+        do {
+            try managedContext.save()
+            
+        } catch let error as NSError  {
+            print("Could not save \(error), \(error.userInfo)")
         }
     }
     
