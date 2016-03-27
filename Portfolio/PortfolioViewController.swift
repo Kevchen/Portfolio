@@ -29,7 +29,6 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
     var USDCAD: Double = 0
     var CADUSD: Double = 0
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         initializeFetchedResultsController()
@@ -41,13 +40,14 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         
         // Do any additional setup after loading the view.
         
-        let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jan", "Feb", "Mar", "Apr", "May", "Jun"]
-        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
-        setChart(months, values: unitsSold)
-
+//                let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+//                let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
+//                setChart(months, values: unitsSold)
+        
+        
         //dont display back button on main view
         self.navigationItem.setHidesBackButton(true, animated: false)
-
+        
         do {
             try self.fetchedResultsController.performFetch()
         } catch {
@@ -77,9 +77,8 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         updateEverything()
     }
     
+    // MARK: charts
     func setChart(dataPoints: [String], values: [Double]) {
-        
-        
         var dataEntries: [ChartDataEntry] = []
         
         for i in 0..<dataPoints.count {
@@ -87,7 +86,7 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
             dataEntries.append(dataEntry)
         }
         
-        let pieChartDataSet = PieChartDataSet(yVals: dataEntries, label: "Net worth")
+        let pieChartDataSet = PieChartDataSet(yVals: dataEntries, label: "Units Sold")
         let pieChartData = PieChartData(xVals: dataPoints, dataSet: pieChartDataSet)
         pieChartView.data = pieChartData
         
@@ -110,10 +109,69 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         lineChartView.data = lineChartData
         
         pieChartView.animate(xAxisDuration: 2.0)
-        
     }
     
-    //Mark table view data source
+    func setPieChart(){
+        var dataEntries: [ChartDataEntry] = []
+        var values = [Double]()
+        var dataPoints = [String]()
+        let displayCurrency:String = currencyButton.currentTitle!
+        
+        //get the values and dataPoints for pie chart
+        for stock in fetchedResultsController.fetchedObjects! as [AnyObject]{
+            let symbol:String = stock.valueForKey("symbol") as! String
+            let exchange:String = stock.valueForKey("exchange") as! String
+            let price:Double = stock.valueForKey("price") as! Double
+            let numShare:Double = stock.valueForKey("numShare") as! Double
+            
+            var worth:Double = price * numShare
+            //convert US stocks to CAD
+            if(displayCurrency == "CAD" && exchange != "TSX"){
+                worth *= USDCAD
+            }
+            //convert Canadian stocks to USD
+            else if(displayCurrency == "USD" && exchange == "TSX"){
+                worth *= CADUSD
+            }
+            
+            //let worth:Double = price * numShare
+            dataPoints.append(symbol)
+            values.append(worth)
+        }
+        
+        for i in 0..<dataPoints.count {
+            let dataEntry = ChartDataEntry(value: values[i], xIndex: i)
+            dataEntries.append(dataEntry)
+        }
+        
+        let pieChartDataSet = PieChartDataSet(yVals: dataEntries, label: "")
+        
+        var colors: [UIColor] = []
+        for _ in 0..<dataPoints.count {
+            let red = Double(arc4random_uniform(256))
+            let green = Double(arc4random_uniform(256))
+            let blue = Double(arc4random_uniform(256))
+
+            let color = UIColor(red: CGFloat(red/255), green: CGFloat(green/255), blue: CGFloat(blue/255), alpha: 1)
+            colors.append(color)
+        }
+        pieChartDataSet.colors = colors
+        
+        pieChartView.descriptionText = "in $\(displayCurrency)"
+        pieChartView.centerAttributedText = NSAttributedString(string: "Distribution")
+        pieChartView.usePercentValuesEnabled = true
+        pieChartView.holeRadiusPercent = 0.35
+        pieChartView.transparentCircleRadiusPercent = 0.40
+        
+        //IMPORTANT: set the chart data here since it's dynamic
+        //or the legends won't display correctly
+        let pieChartData = PieChartData(xVals: dataPoints, dataSet: pieChartDataSet)
+        pieChartView.data = pieChartData
+        
+        pieChartView.animate(xAxisDuration: 2.0)
+    }
+    
+    // Mark: table view data source
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.fetchedResultsController.sections!.count
     }
@@ -221,7 +279,7 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
             let selectedObject = fetchedResultsController.objectAtIndexPath(indexPath) as! NSManagedObject
             destController.itemToPass = selectedObject
         }
-
+        
     }
     
     @IBAction func changeCurrency(sender: UIButton) {
@@ -246,11 +304,11 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
             let symbol:String = stock.valueForKey("symbol") as! String
             let exchange:String = stock.valueForKey("exchange") as! String
             
-            if(exchange == "NASDAQ"){
-                initialUSDWorth += worth
-            }
-            else if(exchange == "TSX"){
+            if(exchange == "TSX"){
                 initialCADWorth += worth
+            }
+            else {
+                initialUSDWorth += worth
             }
             
             print("initialUSDWorth: \(initialUSDWorth), initialCADWorth: \(initialCADWorth)")
@@ -265,7 +323,7 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         print(quote)
         
         //NMS for NASDAQ,
-        //TOR for TSX 
+        //TOR for TSX
         //NYQ for NYSE
         //ASE for AMEX in yahoo JSON
         let price = quote.objectForKey("LastTradePriceOnly") as? String
@@ -301,14 +359,14 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
                     
                 let numShare:Double = stock.valueForKey("numShare") as! Double
                 let worth:Double = Double(price!)! * numShare
-                    
+                
                 if(exchange == "TSX"){
                     currentCADWorth += worth
                 }
                 else{
                     currentUSDWorth += worth
                 }
-                    
+                
                 print("currentUSDWorth: \(currentUSDWorth), currentCADWorth: \(currentCADWorth)")
             }
         }
@@ -350,7 +408,7 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         netWorthLabel.text = String(format:"%.02f", networth)
         
         //update chart
-        //setChart(<#T##dataPoints: [String]##[String]#>, values: <#T##[Double]#>)
+        setPieChart()
     }
     
     func updateEverything(){
@@ -359,7 +417,7 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         currentUSDWorth = 0
         USDCAD = 0
         CADUSD = 0
-
+        
         //get currency rate
         let stockManager:StockManagerSingleton = StockManagerSingleton.sharedInstance
         stockManager.updateCurrency("USD", currencyTo: "CAD")
