@@ -413,8 +413,8 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         let profitLossString:String
         
         //store initial total worth in both CAD & USD
-        let initialTotalWorthUSD: Double = initialCADWorth + (initialUSDWorth * USDCAD)
-        let initialTotalWorthCAD: Double = initialUSDWorth + (initialCADWorth * CADUSD)
+        let initialTotalWorthCAD: Double = initialCADWorth + (initialUSDWorth * USDCAD)
+        let initialTotalWorthUSD: Double = initialUSDWorth + (initialCADWorth * CADUSD)
         
         //networth already in displayed currency
         if(currencyButton.currentTitle == "CAD"){
@@ -468,4 +468,34 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         updateEverything()
         refreshControl!.endRefreshing()
     }
+    
+    //MARK: Swipe delete
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.Delete) {
+            // handle delete (by removing the data from your array and updating the tableview)
+            
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            let managedContext = appDelegate.managedObjectContext
+            
+            //delete record
+            let selectedObject = fetchedResultsController.objectAtIndexPath(indexPath) as! NSManagedObject
+            managedContext.deleteObject(selectedObject)
+            
+            //core data save
+            do {
+                try managedContext.save()
+                print("record is deleted")
+                
+            } catch let error as NSError  {
+                print("Could not save \(error), \(error.userInfo)")
+            }
+            
+            updateEverything()
+        }
+    }
+
 }
