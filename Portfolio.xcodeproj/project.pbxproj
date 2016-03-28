@@ -98,7 +98,7 @@
 		3FEA7E001CA49B1000103619 /* Portfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Portfolio.entitlements; sourceTree = "<group>"; };
 		6532D9161CA614CB008EC8EC /* AMEX.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AMEX.json; sourceTree = SOURCE_ROOT; };
 		6532D9171CA614CB008EC8EC /* NYSE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NYSE.json; sourceTree = SOURCE_ROOT; };
-		6534F73A1C3C8CE00006622F /* iTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6534F73A1C3C8CE00006622F /* iTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6534F73D1C3C8CE00006622F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6534F7421C3C8CE00006622F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6534F7441C3C8CE00006622F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 		6534F73B1C3C8CE00006622F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6534F73A1C3C8CE00006622F /* iTracker.app */,
+				6534F73A1C3C8CE00006622F /* iTrack.app */,
 				6534F74E1C3C8CE00006622F /* PortfolioTests.xctest */,
 				6534F7591C3C8CE00006622F /* PortfolioUITests.xctest */,
 			);
@@ -248,7 +248,7 @@
 			);
 			name = Portfolio;
 			productName = Portfolio;
-			productReference = 6534F73A1C3C8CE00006622F /* iTracker.app */;
+			productReference = 6534F73A1C3C8CE00006622F /* iTrack.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6534F74D1C3C8CE00006622F /* PortfolioTests */ = {
@@ -569,7 +569,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ECE496.Portfolio;
-				PRODUCT_NAME = iTracker;
+				PRODUCT_NAME = iTrack;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -587,7 +587,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ECE496.Portfolio;
-				PRODUCT_NAME = iTracker;
+				PRODUCT_NAME = iTrack;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
