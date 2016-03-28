@@ -15,6 +15,7 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
     @IBOutlet weak var currencyButton: UIButton!
     @IBOutlet weak var lineChartView: LineChartView!
     @IBOutlet weak var netWorthLabel: UILabel!
+    @IBOutlet weak var profitLossLabel: UILabel!
     
     //let managedContext = DataController().managedObjectContext
     var itemArray = [AnyObject]()
@@ -396,16 +397,49 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
             return
         }
         
-        //here we have everything
+        //here we have everything, calculate current net worth
         let networth:Double
         if(currencyButton.currentTitle == "CAD"){
-            networth = currentCADWorth + (USDCAD * currentUSDWorth)
+            networth = currentCADWorth + (currentUSDWorth * USDCAD)
         }
         else{
-            networth = currentUSDWorth + (CADUSD * currentCADWorth)
+            networth = currentUSDWorth + (currentCADWorth * CADUSD)
         }
         
+        //calculate daily profit or loss
+        let profit:Double
+        let profitString:String
+        let percentString:String
+        let profitLossString:String
+        
+        //store initial total worth in both CAD & USD
+        let initialTotalWorthUSD: Double = initialCADWorth + (initialUSDWorth * USDCAD)
+        let initialTotalWorthCAD: Double = initialUSDWorth + (initialCADWorth * CADUSD)
+        
+        //networth already in displayed currency
+        if(currencyButton.currentTitle == "CAD"){
+            profit = networth - initialTotalWorthCAD
+            profitString = String(format: "%.02f", abs(profit))
+            percentString = String(format: "%.02f", abs(profit/initialTotalWorthCAD)*100) + "%"
+        }
+        else{
+            profit = networth - initialTotalWorthUSD
+            profitString = String(format: "%.02f", abs(profit))
+            percentString = String(format: "%.02f", abs(profit/initialTotalWorthUSD)*100) + "%"
+        }
+        
+        if(profit > 0){
+            profitLossString = "+ $\(profitString) (\(percentString))"
+            profitLossLabel.textColor = UIColor.greenColor()
+        }
+        else{
+            profitLossString = "- $\(profitString) (\(percentString))"
+            profitLossLabel.textColor = UIColor.redColor()
+            
+        }
+
         netWorthLabel.text = String(format:"%.02f", networth)
+        profitLossLabel.text = profitLossString
         
         //update chart
         setPieChart()
@@ -415,6 +449,8 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         //reset price
         currentCADWorth = 0
         currentUSDWorth = 0
+        initialCADWorth = 0
+        initialUSDWorth = 0
         USDCAD = 0
         CADUSD = 0
         
