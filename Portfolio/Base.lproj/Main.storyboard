@@ -10,7 +10,7 @@
         <!--Portfolio-->
         <scene sceneID="f0C-Lw-XAu">
             <objects>
-                <tableViewController id="5wl-9Q-Ndu" customClass="PortfolioViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="5wl-9Q-Ndu" customClass="PortfolioViewController" customModule="iTrack" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="KWB-LL-4k1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,13 +59,13 @@
                             <rect key="frame" x="0.0" y="236" width="375" height="552"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="map-mV-Afp" customClass="PieChartView" customModule="Charts">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="268"/>
-                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </view>
                                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LM6-1Y-Yfv" customClass="LineChartView" customModule="Charts">
                                     <rect key="frame" x="0.0" y="276" width="375" height="284"/>
                                     <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="map-mV-Afp" customClass="PieChartView" customModule="Charts">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="268"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -132,13 +132,13 @@
         <!--Search-->
         <scene sceneID="DKL-QP-rdt">
             <objects>
-                <tableViewController id="Goi-kL-esy" customClass="SearchTableViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Goi-kL-esy" customClass="SearchTableViewController" customModule="iTrack" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" id="l62-OC-mLc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="54" id="Qcs-8r-nRK" customClass="SearchCell" customModule="Portfolio" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="54" id="Qcs-8r-nRK" customClass="SearchCell" customModule="iTrack" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="Qcs-8r-nRK" id="gT5-jU-STY">
@@ -228,7 +228,7 @@
         <!--Trade Detail-->
         <scene sceneID="pKp-Ts-FKe">
             <objects>
-                <viewController id="HeW-Hc-vOu" customClass="PortfolioDetailViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HeW-Hc-vOu" customClass="PortfolioDetailViewController" customModule="iTrack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dy2-Nj-QUG"/>
                         <viewControllerLayoutGuide type="bottom" id="HEq-cF-WHX"/>
@@ -237,25 +237,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symbol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdU-nZ-ItD">
-                                <rect key="frame" x="16" y="137" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Exchange" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwr-5i-uoK">
+                                <rect key="frame" x="280" y="108" width="79" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwr-5i-uoK">
-                                <rect key="frame" x="16" y="108" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exchange" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIn-yD-p9k">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIn-yD-p9k">
                                 <rect key="frame" x="16" y="79" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Number of Shares" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMT-KK-93F">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Number of Shares" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMT-KK-93F">
                                 <rect key="frame" x="16" y="188" width="235" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -267,7 +261,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="numShare" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="As6-xm-ka1">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="numShare" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="As6-xm-ka1">
                                 <rect key="frame" x="259" y="188" width="100" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -275,7 +269,7 @@
                                     <outlet property="delegate" destination="HeW-Hc-vOu" id="Fuk-eA-P5N"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="price" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ksO-XW-dWO">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="price" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ksO-XW-dWO">
                                 <rect key="frame" x="259" y="231" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="kok-2F-Kec"/>
@@ -286,7 +280,7 @@
                                     <outlet property="delegate" destination="HeW-Hc-vOu" id="2Kp-u3-L9D"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="date" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhl-1J-WnD">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="date" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhl-1J-WnD">
                                 <rect key="frame" x="259" y="274" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="4OD-N0-Xb5"/>
@@ -308,8 +302,14 @@
                                     <action selector="removeTrade:" destination="HeW-Hc-vOu" eventType="touchDown" id="crP-lQ-2NC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Average Purchase Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eeh-Ta-RiY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Average Purchase Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eeh-Ta-RiY">
                                 <rect key="frame" x="16" y="231" width="192" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Symbol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdU-nZ-ItD">
+                                <rect key="frame" x="16" y="108" width="244" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -317,37 +317,34 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WIn-yD-p9k" firstAttribute="top" secondItem="dy2-Nj-QUG" secondAttribute="bottom" constant="15" id="01Z-ND-Hww"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WIn-yD-p9k" secondAttribute="trailing" constant="-4" id="0OF-vy-Jf6"/>
                             <constraint firstItem="LyK-Y3-sUy" firstAttribute="top" secondItem="Eeh-Ta-RiY" secondAttribute="bottom" constant="14" id="0UE-5R-sa4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="As6-xm-ka1" secondAttribute="trailing" id="2mu-BZ-1QF"/>
                             <constraint firstItem="LyK-Y3-sUy" firstAttribute="leading" secondItem="2J5-OQ-hWT" secondAttribute="leadingMargin" constant="-4" id="3Xf-Fm-ZWJ"/>
                             <constraint firstItem="fhl-1J-WnD" firstAttribute="top" secondItem="ksO-XW-dWO" secondAttribute="bottom" constant="13" id="4Mt-8h-js2"/>
+                            <constraint firstItem="jwr-5i-uoK" firstAttribute="centerY" secondItem="EdU-nZ-ItD" secondAttribute="centerY" id="6zU-73-Fnf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ksO-XW-dWO" secondAttribute="trailing" constant="-4" id="8hO-yb-2Sg"/>
                             <constraint firstItem="ksO-XW-dWO" firstAttribute="leading" secondItem="Eeh-Ta-RiY" secondAttribute="trailing" constant="8" id="Brz-35-3NA"/>
-                            <constraint firstItem="EdU-nZ-ItD" firstAttribute="top" secondItem="dy2-Nj-QUG" secondAttribute="bottom" constant="73" id="DkB-EQ-Fd9"/>
-                            <constraint firstItem="EdU-nZ-ItD" firstAttribute="top" secondItem="jwr-5i-uoK" secondAttribute="bottom" constant="8" id="Ggd-Pu-LzH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jwr-5i-uoK" secondAttribute="trailing" id="K2x-jB-Jqh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jwr-5i-uoK" secondAttribute="trailing" constant="-4" id="ITS-bX-DHL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fhl-1J-WnD" secondAttribute="trailing" constant="-4" id="Nva-Vh-ZOv"/>
-                            <constraint firstItem="As6-xm-ka1" firstAttribute="top" secondItem="EdU-nZ-ItD" secondAttribute="bottom" constant="30" id="Ocu-Qn-hrX"/>
                             <constraint firstItem="As6-xm-ka1" firstAttribute="leading" secondItem="hMT-KK-93F" secondAttribute="trailing" constant="8" id="RaP-ec-aRi"/>
                             <constraint firstItem="Eeh-Ta-RiY" firstAttribute="leading" secondItem="2J5-OQ-hWT" secondAttribute="leadingMargin" constant="-4" id="Rmt-GX-F13"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="EdU-nZ-ItD" secondAttribute="trailing" id="TsW-Zh-oa3"/>
                             <constraint firstItem="fhl-1J-WnD" firstAttribute="leading" secondItem="LyK-Y3-sUy" secondAttribute="trailing" constant="51" id="VFQ-Tq-23O"/>
                             <constraint firstItem="tEG-OB-d2G" firstAttribute="top" secondItem="LyK-Y3-sUy" secondAttribute="bottom" constant="90" id="WFO-Je-Q6O"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WIn-yD-p9k" secondAttribute="trailing" id="c3Z-Dh-m5b"/>
-                            <constraint firstItem="jwr-5i-uoK" firstAttribute="top" secondItem="WIn-yD-p9k" secondAttribute="bottom" constant="8" id="dUu-0M-uss"/>
+                            <constraint firstItem="WIn-yD-p9k" firstAttribute="leading" secondItem="2J5-OQ-hWT" secondAttribute="leadingMargin" constant="-4" id="ZvR-Gd-1UD"/>
+                            <constraint firstItem="hMT-KK-93F" firstAttribute="top" secondItem="EdU-nZ-ItD" secondAttribute="bottom" constant="59" id="bJF-xy-tic"/>
+                            <constraint firstItem="jwr-5i-uoK" firstAttribute="leading" secondItem="EdU-nZ-ItD" secondAttribute="trailing" constant="4" id="baF-Kn-1eK"/>
                             <constraint firstItem="Eeh-Ta-RiY" firstAttribute="centerY" secondItem="ksO-XW-dWO" secondAttribute="centerY" id="djC-QO-BLp"/>
                             <constraint firstItem="ksO-XW-dWO" firstAttribute="top" secondItem="As6-xm-ka1" secondAttribute="bottom" constant="13" id="ey4-lL-jck"/>
                             <constraint firstItem="LyK-Y3-sUy" firstAttribute="height" secondItem="fhl-1J-WnD" secondAttribute="height" id="iJw-uG-uBB"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="WIn-yD-p9k" secondAttribute="leading" id="le6-hH-tdN"/>
+                            <constraint firstItem="EdU-nZ-ItD" firstAttribute="leading" secondItem="2J5-OQ-hWT" secondAttribute="leadingMargin" constant="-4" id="iTx-pF-J0d"/>
                             <constraint firstItem="fhl-1J-WnD" firstAttribute="leading" secondItem="As6-xm-ka1" secondAttribute="leading" id="lw3-yE-tbc"/>
                             <constraint firstItem="hMT-KK-93F" firstAttribute="centerY" secondItem="As6-xm-ka1" secondAttribute="centerY" id="mT8-SQ-Goy"/>
                             <constraint firstItem="Eeh-Ta-RiY" firstAttribute="top" secondItem="hMT-KK-93F" secondAttribute="bottom" constant="14" id="nRY-I8-WhO"/>
-                            <constraint firstItem="hMT-KK-93F" firstAttribute="top" secondItem="EdU-nZ-ItD" secondAttribute="bottom" constant="30" id="pHk-R6-u8I"/>
                             <constraint firstAttribute="leadingMargin" secondItem="hMT-KK-93F" secondAttribute="leading" id="qEj-BT-NLt"/>
+                            <constraint firstItem="WIn-yD-p9k" firstAttribute="top" secondItem="dy2-Nj-QUG" secondAttribute="bottom" constant="15" id="tfx-7i-0di"/>
                             <constraint firstItem="tEG-OB-d2G" firstAttribute="centerX" secondItem="2J5-OQ-hWT" secondAttribute="centerX" id="wX6-OZ-xwt"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="jwr-5i-uoK" secondAttribute="leading" id="ygp-I6-cBU"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="EdU-nZ-ItD" secondAttribute="leading" id="ysX-d9-KXs"/>
+                            <constraint firstItem="EdU-nZ-ItD" firstAttribute="top" secondItem="WIn-yD-p9k" secondAttribute="bottom" constant="8" id="ws6-wm-Trq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Trade Detail" id="wSg-o3-hnO">
@@ -363,11 +360,11 @@
                         <outlet property="dateTextField" destination="fhl-1J-WnD" id="xfg-gp-m6u"/>
                         <outlet property="deleteButton" destination="tEG-OB-d2G" id="LF8-39-f9c"/>
                         <outlet property="editButton" destination="6pE-zr-r7v" id="iGp-xi-XjG"/>
-                        <outlet property="exchangeLabel" destination="WIn-yD-p9k" id="6jJ-zC-aMl"/>
-                        <outlet property="nameLabel" destination="jwr-5i-uoK" id="0bz-mw-b1C"/>
+                        <outlet property="exchangeLabel" destination="jwr-5i-uoK" id="AYF-ux-KsZ"/>
+                        <outlet property="nameLabel" destination="WIn-yD-p9k" id="e6P-uM-DTB"/>
                         <outlet property="numShareTextField" destination="As6-xm-ka1" id="osG-AZ-0bk"/>
                         <outlet property="priceTextField" destination="ksO-XW-dWO" id="kbR-Gr-zAr"/>
-                        <outlet property="symbolLabel" destination="EdU-nZ-ItD" id="sQ5-xo-7C1"/>
+                        <outlet property="symbolLabel" destination="EdU-nZ-ItD" id="JhL-6X-xGp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1w-AA-AxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -377,7 +374,7 @@
         <!--Detail-->
         <scene sceneID="xi6-gV-qKp">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="IoL-QJ-MdG" customClass="DetailViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="IoL-QJ-MdG" customClass="DetailViewController" customModule="iTrack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CcW-TQ-OYP"/>
                         <viewControllerLayoutGuide type="bottom" id="fjN-1Z-HcY"/>
@@ -530,7 +527,7 @@
         <!--Add To Portfolio-->
         <scene sceneID="2XY-RR-E5E">
             <objects>
-                <viewController id="tCY-2W-EXx" customClass="AddToPortfolioViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tCY-2W-EXx" customClass="AddToPortfolioViewController" customModule="iTrack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2j8-cd-5Eq"/>
                         <viewControllerLayoutGuide type="bottom" id="lbA-kA-98T"/>
