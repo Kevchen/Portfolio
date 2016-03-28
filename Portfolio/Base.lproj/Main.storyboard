@@ -21,7 +21,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Net Worth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="SMf-aQ-3Pa">
-                                    <rect key="frame" x="146" y="21" width="128" height="30"/>
+                                    <rect key="frame" x="123" y="21" width="128" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="128" id="D8B-qf-4c0"/>
                                     </constraints>
@@ -29,14 +29,6 @@
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stQ-tP-oxb">
-                                    <rect key="frame" x="101" y="21" width="32" height="30"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                    <state key="normal" title="CAD"/>
-                                    <connections>
-                                        <action selector="changeCurrency:" destination="5wl-9Q-Ndu" eventType="touchUpInside" id="ag3-d2-DzF"/>
-                                    </connections>
-                                </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Profit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="awU-sx-Ydf">
                                     <rect key="frame" x="101" y="50" width="173" height="30"/>
                                     <constraints>
@@ -46,16 +38,22 @@
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stQ-tP-oxb">
+                                    <rect key="frame" x="83" y="21" width="32" height="30"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                    <state key="normal" title="CAD"/>
+                                    <connections>
+                                        <action selector="changeCurrency:" destination="5wl-9Q-Ndu" eventType="touchUpInside" id="ag3-d2-DzF"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="stQ-tP-oxb" firstAttribute="height" secondItem="SMf-aQ-3Pa" secondAttribute="height" id="6m0-kS-4EA"/>
-                                <constraint firstItem="SMf-aQ-3Pa" firstAttribute="centerX" secondItem="idL-vC-50T" secondAttribute="centerX" constant="22.5" id="8Q1-Lr-4sf"/>
-                                <constraint firstItem="SMf-aQ-3Pa" firstAttribute="leading" secondItem="stQ-tP-oxb" secondAttribute="trailing" constant="13" id="92Y-uI-z4o"/>
-                                <constraint firstItem="SMf-aQ-3Pa" firstAttribute="centerX" secondItem="idL-vC-50T" secondAttribute="centerX" constant="22.5" id="ITc-l9-eDl"/>
+                                <constraint firstItem="SMf-aQ-3Pa" firstAttribute="centerX" secondItem="idL-vC-50T" secondAttribute="centerX" id="TGF-RH-ZLq"/>
+                                <constraint firstItem="SMf-aQ-3Pa" firstAttribute="leading" secondItem="stQ-tP-oxb" secondAttribute="trailing" constant="8" id="Xdn-lN-hMO"/>
                                 <constraint firstItem="stQ-tP-oxb" firstAttribute="centerY" secondItem="SMf-aQ-3Pa" secondAttribute="centerY" id="aLb-sJ-ppH"/>
                                 <constraint firstItem="SMf-aQ-3Pa" firstAttribute="centerY" secondItem="idL-vC-50T" secondAttribute="centerY" constant="-14" id="cvc-0t-hEe"/>
-                                <constraint firstItem="SMf-aQ-3Pa" firstAttribute="centerX" secondItem="idL-vC-50T" secondAttribute="centerX" constant="22.5" id="mr3-u3-jqe"/>
                             </constraints>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="2Ur-wS-JOd">
