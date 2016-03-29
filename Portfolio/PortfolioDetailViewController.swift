@@ -33,7 +33,10 @@ class PortfolioDetailViewController: UIViewController, UITextFieldDelegate {
         nameLabel.text     = itemToPass.valueForKey("name") as? String
         symbolLabel.text   = itemToPass.valueForKey("symbol") as? String
         numShareTextField.text = String(itemToPass.valueForKey("numShare")!)
-        priceTextField.text    = String(itemToPass.valueForKey("price")!)
+        let price = itemToPass.valueForKey("price") as? Double
+        priceTextField.text = String(format: "%.02f", price!)
+        
+       
     
         date  = itemToPass.valueForKey("date") as! NSDate
         let dateFormatter:NSDateFormatter = NSDateFormatter()
@@ -85,6 +88,26 @@ class PortfolioDetailViewController: UIViewController, UITextFieldDelegate {
     func saveChanges(){
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
+        
+        print(numShareTextField.text)
+        
+        //check if any null
+        if(priceTextField.text == "" || Double(priceTextField.text!) == 0){
+            let alertController = UIAlertController(title: "Error!", message:
+                "Invalid Price", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            return
+        }
+        else if(numShareTextField.text == "" || Int(numShareTextField.text!) == 0){
+            let alertController = UIAlertController(title: "Error!", message:
+                "Invalid Number of Shares", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            return
+        }
         
         self.itemToPass.setValue(Double(priceTextField.text!), forKey: "price")
         self.itemToPass.setValue(Int(numShareTextField.text!), forKey: "numShare")

@@ -17,6 +17,7 @@ struct StockItem
     let numShare:Int
     let purchaseDate: NSDate
     let price: double_t
+    let change: String
 }
 
 struct BondItem{

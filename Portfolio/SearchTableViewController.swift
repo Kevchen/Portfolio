@@ -89,7 +89,6 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! SearchCell
         
-        
         if self.resultSearchController.active && filterArray.isEmpty == false{
             
             cell.nameLabel.text =  self.filterArray[indexPath.row].name
@@ -106,7 +105,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
                 cell.exchangeLabel.backgroundColor = UIColor.purpleColor()
             }
             else if(cell.exchangeLabel.text == "NYSE"){
-                cell.exchangeLabel.backgroundColor = UIColor.greenColor()
+                cell.exchangeLabel.backgroundColor = UIColor(red: 0.0, green: 0.78, blue: 0.2, alpha: 1) //green
             }
             
         }
@@ -151,7 +150,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
                     let name = stock["Stock Name"] as? String,
                     let sector = stock["Sector"] as? String
                     else {return}
-                self.searchArray += [StockItem(name: name, symbol:  ticker, exchange: exchange, sector: sector, numShare: 0, purchaseDate: NSDate(), price: 0)]
+                self.searchArray += [StockItem(name: name, symbol:  ticker, exchange: exchange, sector: sector, numShare: 0, purchaseDate: NSDate(), price: 0, change: "")]
                 
             }
             

@@ -100,10 +100,10 @@ class DetailViewController: UIViewController  {
         //set the change and percent
         let change: String = quote.objectForKey("Change") as! String
         if(change.characters.first == "+"){
-            risefallLabel.textColor = UIColor.greenColor()
+            risefallLabel.textColor = UIColor(red: 0.0, green: 0.78, blue: 0.2, alpha: 1) //green
         }
         else{
-            risefallLabel.textColor = UIColor.redColor()
+            risefallLabel.textColor = UIColor(red: 0.96, green: 0.26, blue: 0.21, alpha: 1) //red
         }
         let changeInPercent: String = quote.objectForKey("ChangeinPercent") as! String
         risefallLabel.text = change+" ("+String(changeInPercent.characters.dropFirst())+")"

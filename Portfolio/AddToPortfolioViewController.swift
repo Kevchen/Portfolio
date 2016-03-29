@@ -18,6 +18,10 @@ class AddToPortfolioViewController: UIViewController, UITextFieldDelegate {
     
     var date:NSDate!
     
+    //for holding quote values
+    var change: String!
+    var lastTradedPriceOnly:Double!
+    
     @IBOutlet weak var doneButton: UIBarButtonItem!
     @IBOutlet weak var numShareTextField: UITextField!
     @IBOutlet weak var dateTextField: UITextField!
@@ -73,11 +77,19 @@ class AddToPortfolioViewController: UIViewController, UITextFieldDelegate {
     }
     
     func stockUpdated(notification: NSNotification){
-        let quote: NSDictionary = notification.userInfo![kNotificationStockUpdated] as! NSDictionary
+        let quote = notification.userInfo![kNotificationStockUpdated] as! NSDictionary
         //print(quote)
         
+        let changeString: String = quote.objectForKey("Change") as! String
+        let changeInPercent: String = quote.objectForKey("ChangeinPercent") as! String
+        change = changeString+" ("+String(changeInPercent.characters.dropFirst())+")"
+    
+        //stored last traded price only
+        let lastTradedPriceOnlyString = quote.objectForKey("LastTradePriceOnly") as! String
+        lastTradedPriceOnly = Double(lastTradedPriceOnlyString)
+        
         //set the price
-        priceTextField.text = quote.objectForKey("LastTradePriceOnly") as? String
+        priceTextField.text = lastTradedPriceOnlyString
     }
 
     @IBAction func showDatePicker(sender: UITextField) {
@@ -133,6 +145,24 @@ class AddToPortfolioViewController: UIViewController, UITextFieldDelegate {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         
+        //check if any null
+        if(priceTextField.text == "" || Double(priceTextField.text!) == 0){
+            let alertController = UIAlertController(title: "Error!", message:
+                "Invalid Price", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            return
+        }
+        else if(numShareTextField.text == "" || Int(numShareTextField.text!) == 0){
+            let alertController = UIAlertController(title: "Error!", message:
+                "Invalid Number of Shares", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            return
+        }
+        
         //if no record exists, create a new record
         if(checkExistAndUpdate() == false){
             let entity =  NSEntityDescription.entityForName("Stock",inManagedObjectContext:managedContext)
@@ -144,7 +174,9 @@ class AddToPortfolioViewController: UIViewController, UITextFieldDelegate {
             stock.setValue(Double(priceTextField.text!), forKey: "price")
             stock.setValue(Int(numShareTextField.text!), forKey: "numShare")
             stock.setValue(date, forKey: "date")
-
+            stock.setValue(change, forKey: "change")
+            stock.setValue(lastTradedPriceOnly, forKey: "lastTradedPriceOnly")
+            
             do {
                 try managedContext.save()
 
@@ -203,6 +235,7 @@ class AddToPortfolioViewController: UIViewController, UITextFieldDelegate {
             let avgPrice: Double = (newWorth + oldWorth) / (Double(oldNumShare) + Double(newNumShare))
             
             //save new avg price and date
+            
             record.setValue(avgPrice, forKey: "price")
             record.setValue(date, forKey: "date")
             

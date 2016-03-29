@@ -10,16 +10,15 @@ import UIKit
 import Charts
 import CoreData
 
-class PortfolioViewController: UITableViewController, NSFetchedResultsControllerDelegate{
+class PortfolioViewController: UITableViewController, NSFetchedResultsControllerDelegate, ChartViewDelegate{
     @IBOutlet weak var pieChartView: PieChartView!
     @IBOutlet weak var currencyButton: UIButton!
     @IBOutlet weak var lineChartView: LineChartView!
     @IBOutlet weak var netWorthLabel: UILabel!
     @IBOutlet weak var profitLossLabel: UILabel!
+    @IBOutlet weak var dailyProfitLossLabel: UILabel!
     
     //let managedContext = DataController().managedObjectContext
-    var itemArray = [AnyObject]()
-    var stockArray = [NSManagedObject]()
     var fetchedResultsController: NSFetchedResultsController!
     
     //For calculating networth
@@ -34,17 +33,14 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         super.viewDidLoad()
         initializeFetchedResultsController()
         
+        pieChartView.delegate = self
+        
         //set up refresh control
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: Selector("updatePrice"), forControlEvents: UIControlEvents.ValueChanged)
         self.refreshControl = refreshControl
         
         // Do any additional setup after loading the view.
-        
-//                let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
-//                let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
-//                setChart(months, values: unitsSold)
-        
         
         //dont display back button on main view
         self.navigationItem.setHidesBackButton(true, animated: false)
@@ -79,38 +75,38 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
     }
     
     // MARK: charts
-    func setChart(dataPoints: [String], values: [Double]) {
-        var dataEntries: [ChartDataEntry] = []
-        
-        for i in 0..<dataPoints.count {
-            let dataEntry = ChartDataEntry(value: values[i], xIndex: i)
-            dataEntries.append(dataEntry)
-        }
-        
-        let pieChartDataSet = PieChartDataSet(yVals: dataEntries, label: "Units Sold")
-        let pieChartData = PieChartData(xVals: dataPoints, dataSet: pieChartDataSet)
-        pieChartView.data = pieChartData
-        
-        var colors: [UIColor] = []
-        
-        for _ in 0..<dataPoints.count {
-            let red = Double(arc4random_uniform(256))
-            let green = Double(arc4random_uniform(256))
-            let blue = Double(arc4random_uniform(256))
-            
-            let color = UIColor(red: CGFloat(red/255), green: CGFloat(green/255), blue: CGFloat(blue/255), alpha: 1)
-            colors.append(color)
-        }
-        
-        pieChartDataSet.colors = colors
-        
-        
-        let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Units Sold")
-        let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
-        lineChartView.data = lineChartData
-        
-        pieChartView.animate(xAxisDuration: 2.0)
-    }
+//    func setChart(dataPoints: [String], values: [Double]) {
+//        var dataEntries: [ChartDataEntry] = []
+//        
+//        for i in 0..<dataPoints.count {
+//            let dataEntry = ChartDataEntry(value: values[i], xIndex: i)
+//            dataEntries.append(dataEntry)
+//        }
+//        
+//        let pieChartDataSet = PieChartDataSet(yVals: dataEntries, label: "Units Sold")
+//        let pieChartData = PieChartData(xVals: dataPoints, dataSet: pieChartDataSet)
+//        pieChartView.data = pieChartData
+//        
+//        var colors: [UIColor] = []
+//        
+//        for _ in 0..<dataPoints.count {
+//            let red = Double(arc4random_uniform(256))
+//            let green = Double(arc4random_uniform(256))
+//            let blue = Double(arc4random_uniform(256))
+//            
+//            let color = UIColor(red: CGFloat(red/255), green: CGFloat(green/255), blue: CGFloat(blue/255), alpha: 1)
+//            colors.append(color)
+//        }
+//        
+//        pieChartDataSet.colors = colors
+//        
+//        
+//        let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Units Sold")
+//        let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
+//        lineChartView.data = lineChartData
+//        
+//        pieChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
+//    }
     
     func setPieChart(){
         var dataEntries: [ChartDataEntry] = []
@@ -160,16 +156,33 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         
         pieChartView.descriptionText = "in $\(displayCurrency)"
         pieChartView.centerAttributedText = NSAttributedString(string: "Distribution")
-        pieChartView.usePercentValuesEnabled = true
         pieChartView.holeRadiusPercent = 0.35
         pieChartView.transparentCircleRadiusPercent = 0.40
+        
+        let highlighted: [ChartHighlight] = pieChartView.highlighted
+        
+        if(highlighted.count > 0){
+            pieChartView.usePercentValuesEnabled = false
+        }
+        else{
+            pieChartView.usePercentValuesEnabled = true
+        }
         
         //IMPORTANT: set the chart data here since it's dynamic
         //or the legends won't display correctly
         let pieChartData = PieChartData(xVals: dataPoints, dataSet: pieChartDataSet)
         pieChartView.data = pieChartData
         
-        pieChartView.animate(xAxisDuration: 2.0)
+        pieChartView.animate(xAxisDuration: 1.5, yAxisDuration: 1.5)
+    }
+    
+    func chartValueSelected(chartView: ChartViewBase, entry: ChartDataEntry, dataSetIndex: Int, highlight: ChartHighlight) {
+        //print("\(entry.value) in (months[entry.xIndex])")
+        pieChartView.usePercentValuesEnabled = false
+    }
+    
+    func chartValueNothingSelected(chartView: ChartViewBase){
+        pieChartView.usePercentValuesEnabled = true
     }
     
     // Mark: table view data source
@@ -184,16 +197,34 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell?
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! PortfolioCell
         
         // Configure Table View Cell
         let stock = fetchedResultsController.objectAtIndexPath(indexPath)
-        
+        print(stock)
         if let name = stock.valueForKey("name") as? String {
-            cell!.textLabel!.text = name
+            cell.nameLabel.text = name
         }
-        
-        return cell!
+        if let symbol = stock.valueForKey("symbol") as? String{
+            cell.symbolLabel.text = symbol
+        }
+        if let change = stock.valueForKey("change") as? String{
+            //set the rise and fall
+            
+            if(change.characters.first == "+"){
+                cell.risefallLabel.textColor = UIColor(red: 0.0, green: 0.78, blue: 0.2, alpha: 1) //green
+            }
+            else{
+                cell.risefallLabel.textColor = UIColor(red: 0.96, green: 0.26, blue: 0.21, alpha: 1) //red
+            }
+            //just show the percentage
+            var changeString = change
+            //changeString = String(changeString.characters.dropLast(1))
+            //changeString = changeString.substringFromIndex(changeString.rangeOfString("(")!.startIndex)
+            cell.risefallLabel.text = changeString
+        }
+    
+        return cell
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -327,10 +358,10 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         //TOR for TSX
         //NYQ for NYSE
         //ASE for AMEX in yahoo JSON
-        let price = quote.objectForKey("LastTradePriceOnly") as? String
+        let price = quote.valueForKey("LastTradePriceOnly") as? String
         //let currency = quote.objectForKey("Currency") as? String
-        var symbol:String = (quote.objectForKey("symbol") as? String)!
-        var exchange:String = (quote.objectForKey("StockExchange") as? String)!
+        var symbol:String = (quote.valueForKey("symbol") as? String)!
+        var exchange:String = (quote.valueForKey("StockExchange") as? String)!
         
         switch(exchange){
         case "NMS":
@@ -369,8 +400,27 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
                 }
                 
                 print("currentUSDWorth: \(currentUSDWorth), currentCADWorth: \(currentCADWorth)")
+                    
+                //set the change and percent
+                let change: String = quote.objectForKey("Change") as! String
+                let changeInPercent: String = quote.objectForKey("ChangeinPercent") as! String
+                let changeString = change+" ("+String(changeInPercent.characters.dropFirst())+")"
+                stock.setValue(changeString, forKey: "change")
+                    
+                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                let managedContext = appDelegate.managedObjectContext
+                    
+                do {
+                    try managedContext.save()
+                    
+                } catch let error as NSError  {
+                    print("Could not save \(error), \(error.userInfo)")
+                }
+                    
+                print(stock)
             }
         }
+        
         displayNetWorth()
     }
     
@@ -430,11 +480,11 @@ class PortfolioViewController: UITableViewController, NSFetchedResultsController
         
         if(profit > 0){
             profitLossString = "+ $\(profitString) (\(percentString))"
-            profitLossLabel.textColor = UIColor.greenColor()
+            profitLossLabel.textColor = UIColor(red: 0.0, green: 0.78, blue: 0.2, alpha: 1) //green
         }
         else{
             profitLossString = "- $\(profitString) (\(percentString))"
-            profitLossLabel.textColor = UIColor.redColor()
+            profitLossLabel.textColor = UIColor(red: 0.96, green: 0.26, blue: 0.21, alpha: 1) //red
             
         }
 
